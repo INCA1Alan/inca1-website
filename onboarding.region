@@ -1,3 +1,3 @@
 <p>onboarding goes here</p>
 
-        <squarespace:block-field id="onboardingBlocks" columns="1" />
+        <squarespace:block-field id="onboardingBlocks" columns="1" lock-layout="true" />
