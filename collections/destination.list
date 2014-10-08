@@ -1,6 +1,6 @@
 <section>
     <p>items content comes next</p>
-    {.repeated section item}
+    {.repeated section items}
         <p>{id}</p>
         <p>{body}</p>
     {.or}
