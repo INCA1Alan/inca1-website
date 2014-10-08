@@ -10,9 +10,17 @@
 </section>
 {.end}
 
+{.repeated section items}
+    <article>
+        <h1>{title}</h1>
+        <p>{description}</p>
+    </article>
+{.end}
+
 <section>
     <p>items content comes next</p>
     {.repeated section items}
+        <p>{id}</p>
         <p>{body}</p>
     {.or}
         <p>no items!</p>
