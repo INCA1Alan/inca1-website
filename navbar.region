@@ -1,0 +1,24 @@
+      <header id="header" class="header">
+        <!--Site title or logo.-->
+        {.section website}
+
+          <h1 class="site-title" data-content-field="site-title">
+            <a href="/">
+              {.section logoImageUrl}
+               <img class="logo" src="{logoImageUrl}?format=original" alt="{siteTitle}" />
+              {.or}
+                {siteTitle}
+              {.end}
+            </a>
+          </h1>
+          
+          <!--Site tagline.-->
+          {.section siteTagLine}
+            <p class="site-tagline">{@}</p>
+          {.end}
+
+        {.end}
+
+        <!--Main navigation.-->
+        <squarespace:navigation navigationId="mainNav" template="navigation" />
+      </header>
