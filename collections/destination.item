@@ -1,1 +1,9 @@
-<pre>{@|json-pretty}</pre>
+<section>
+    <p>main content comes next</p>
+    {squarespace.main-content}
+</section>
+
+<aside>
+    <p>some blocks here</p>
+    <squarespace:block-field id="someBlocks" />
+</aside>
