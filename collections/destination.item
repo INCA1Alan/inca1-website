@@ -3,6 +3,7 @@
     {squarespace.main-content}
 </section>
 
+{.section collection}
 <section>
     <p>item content comes next</p>
     {.repeated section items}
@@ -11,6 +12,7 @@
     <p>no items!</p>
     {.end}
 </section>
+{.end}
 
 <aside>
     <p>some blocks here</p>
