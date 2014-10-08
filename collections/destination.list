@@ -1,0 +1,9 @@
+<section>
+    <p>items content comes next</p>
+    {.repeated section item}
+        <p>{id}</p>
+        <p>{body}</p>
+    {.or}
+        <p>no items!</p>
+    {.end}
+</section>
