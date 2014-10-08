@@ -3,6 +3,15 @@
     {squarespace.main-content}
 </section>
 
+<section>
+    <p>item content comes next</p>
+    {.repeated section items}
+        {body}
+    {.or}
+    <p>no items!</p>
+    {.end}
+</section>
+
 <aside>
     <p>some blocks here</p>
     <squarespace:block-field id="someBlocks" />
