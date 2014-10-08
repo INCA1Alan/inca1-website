@@ -5,14 +5,19 @@
 
 {.section collection}
 <section>
-    <p>item content comes next</p>
-    {.repeated section items}
-        {body}
-    {.or}
-    <p>no items!</p>
-    {.end}
+    <p>collection meta-content comes next</p>
+    <h1>{title}</h1>
 </section>
 {.end}
+
+<section>
+    <p>items content comes next</p>
+    {.repeated section items}
+        <p>{body}</p>
+    {.or}
+        <p>no items!</p>
+    {.end}
+</section>
 
 <aside>
     <p>some blocks here</p>
