@@ -1,4 +1,4 @@
-{.repeated section items}
+{.section item}
     <article>
         <h1>{title}</h1>
     </article>
@@ -13,7 +13,7 @@
 
 <section>
     <p>items content comes next</p>
-    {.repeated section items}
+    {.section item}
         <p>{id}</p>
         <p>{body}</p>
     {.or}
