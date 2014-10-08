@@ -1,20 +1,14 @@
-<section>
-    <p>main content comes next</p>
-    {squarespace.main-content}
-</section>
+{.repeated section items}
+    <article>
+        <h1>{title}</h1>
+    </article>
+{.end}
 
 {.section collection}
 <section>
     <p>collection meta-content comes next</p>
     <h1>{title}</h1>
 </section>
-{.end}
-
-{.repeated section items}
-    <article>
-        <h1>{title}</h1>
-        <p>{description}</p>
-    </article>
 {.end}
 
 <section>
