@@ -11,8 +11,9 @@
 
     <div class="container">
 
+<!--
       <header id="header" class="header">
-        <!--Site title or logo.-->
+        <!--Site title or logo.--
         {.section website}
 
           <h1 class="site-title" data-content-field="site-title">
@@ -25,16 +26,17 @@
             </a>
           </h1>
           
-          <!--Site tagline.-->
+          <!--Site tagline.--
           {.section siteTagLine}
             <p class="site-tagline">{@}</p>
           {.end}
 
         {.end}
 
-        <!--Main navigation.-->
+        <!--Main navigation.--
         <squarespace:navigation navigationId="mainNav" template="navigation" />
       </header>
+-->
 
       <!--Content injection point.-->
       <main id="content" class="content" role="main" data-content-field="main-content">
