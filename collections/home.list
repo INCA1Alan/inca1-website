@@ -3,6 +3,11 @@
     <div class="section__layout">
         <h1 class="section__title">{title}</h1>
         {body}
+        {.excerpt?}
+        <div class="section__table">
+            {@}
+        </div>
+        {.end}
     </div>
 </section>
 {.or}
