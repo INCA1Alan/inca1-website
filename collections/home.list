@@ -1,6 +1,8 @@
 {.repeated section items}
 <section class="section section--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
-    {body}
+    <div class="section__layout">
+        {body}
+    </div>
 </section>
 {.or}
     <p>No sections to display.</p>

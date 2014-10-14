@@ -1,3 +1,65 @@
+body {
+    min-width: 1440px;
+}
+
 .section--why-inca {
     min-height: 591px;
+}
+
+.section {
+    text-align: center;
+
+    a {
+        border-width: 2px;
+        border-style: solid;
+        padding: 0 38px;
+        line-height: 46px;
+        height: 46px;
+        display: inline-block;
+    }
+}
+
+/* default section style: dark text on light background */
+.section,
+.tag-dark {
+    color: #333333;
+
+    a {
+        color: #25639f;
+        border-color: #25639f;
+    }
+}
+
+/* alternate section style: light text on dark background */
+.tag-light {
+    color: #ffffff;
+
+    a {
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+}
+
+.section__layout {
+    margin: 120px auto;
+}
+
+/* default section style: center-aligned */
+.section__layout {
+    .section &,
+    .tag-center & {
+        width: 830px;
+    }
+}
+
+/* alternate section style: left-aligned */
+.tag-left {
+    background-position: bottom right;
+}
+
+.section__layout {
+    .tag-left & {
+        width: 505px;
+        margin-left: 120px;
+    }
 }
