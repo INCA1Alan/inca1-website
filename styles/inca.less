@@ -22,6 +22,7 @@ body {
         line-height: 46px;
         height: 46px;
         display: inline-block;
+        text-decoration: none;
     }
 }
 
@@ -51,11 +52,6 @@ body {
 }
 
 /* default section style: center-aligned */
-.section,
-.tag-center {
-    background-size: cover;
-}
-
 .section__layout {
     .section &,
     .tag-center & {
@@ -66,7 +62,6 @@ body {
 /* alternate section style: left-aligned */
 .tag-left {
     background-position: bottom right;
-    background-size: auto;
 }
 
 .section__layout {
@@ -74,4 +69,15 @@ body {
         width: 505px;
         margin-left: 120px;
     }
+}
+
+/* default section style: contain (i.e. just place the background image) */
+.section,
+.tag-contain {
+    background-size: auto;
+}
+
+/* alternate section style: cover (expand bg to cover the section) */
+.tag-cover {
+    background-size: cover;
 }
