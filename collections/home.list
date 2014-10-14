@@ -1,9 +1,7 @@
-<section>
-    <p>items content comes next</p>
-    {.repeated section items}
-        <p>{id}</p>
-        <p>{body}</p>
-    {.or}
-        <p>no items!</p>
-    {.end}
+{.repeated section items}
+<section class="section section--{title|slugify}" style="background-image: url({assetUrl})">
+    {body}
 </section>
+{.or}
+    <p>No sections to display.</p>
+{.end}
