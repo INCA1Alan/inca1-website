@@ -51,6 +51,11 @@ body {
 }
 
 /* default section style: center-aligned */
+.section,
+.tag-center {
+    background-size: cover;
+}
+
 .section__layout {
     .section &,
     .tag-center & {
@@ -61,7 +66,7 @@ body {
 /* alternate section style: left-aligned */
 .tag-left {
     background-position: bottom right;
-    background-size: cover;
+    background-size: auto;
 }
 
 .section__layout {
