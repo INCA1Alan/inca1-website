@@ -1,5 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <!--Include sqs scripts, meta tags, and user content from the code injection tab.-->
+    {squarespace-headers}
+  </head>
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+
+<!--
+    <div class="container">
+-->
+<!--
       <header id="header" class="header">
-        <!--Site title or logo.-->
+        <!--Site title or logo.--
         {.section website}
 
           <h1 class="site-title" data-content-field="site-title">
@@ -12,13 +28,14 @@
             </a>
           </h1>
           
-          <!--Site tagline.-->
+          <!--Site tagline.--
           {.section siteTagLine}
             <p class="site-tagline">{@}</p>
           {.end}
 
         {.end}
 
-        <!--Main navigation.-->
+        <!--Main navigation.--
         <squarespace:navigation navigationId="mainNav" template="navigation" />
       </header>
+-->
