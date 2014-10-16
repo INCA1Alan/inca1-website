@@ -41,3 +41,10 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
 
   });
 });
+
+document.addEventListener('keydown keyup keypress', function(e) {
+    if (e.keyCode == 27) {
+        e.preventDefault();
+        e.stopPropagation();
+    }
+});
