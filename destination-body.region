@@ -4,6 +4,7 @@
             {.section mainImage}
                 <img {@|image-meta}>
             {.end}
+            {description}
         </header>
     {.end}
     <main id="content" class="content" role="main" data-content-field="main-content">
