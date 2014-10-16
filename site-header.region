@@ -6,14 +6,6 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
 
-    <script>
-document.addEventListener('keydown keyup keypress', function(e) {
-    if (e.keyCode == 27) {
-        e.preventDefault();
-        e.stopPropagation();
-    }
-});
-    </script>
     <!--Include sqs scripts, meta tags, and user content from the code injection tab.-->
     {squarespace-headers}
   </head>
