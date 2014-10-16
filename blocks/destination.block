@@ -1,11 +1,13 @@
-<nav>
+<nav class="subnav">
   <ul>
-
     {.repeated section items}
-    <li class="{.section active} active-link{.end}">
+    <li class="subnav__item {.section active} subnav__item--active{.end}">
 
       {.section collection}
-        <a href="{fullUrl}">{navigationTitle}</a>
+        <a href="{fullUrl}">
+            <i>{navigationTitle}</i>
+            <span>{title}</span>
+        </a>
       {.end}
 
       {.section externalLink}
@@ -14,6 +16,5 @@
 
     </li>
     {.end}
-
   </ul>
 </nav>
