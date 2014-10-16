@@ -1,7 +1,7 @@
 <article class="destination">
-    {.collection}
+    {.section collection}
         <header class="destination__header content-fill">
-            {.mainImage}
+            {.section mainImage}
                 <img {@|image-meta}>
             {.end}
         </header>
