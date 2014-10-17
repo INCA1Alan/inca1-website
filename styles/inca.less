@@ -206,11 +206,16 @@ body {
     font-style: normal;
 }
 
+.subnav {
+    text-align: center;
+}
+
 .subnav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 0;
+    display: inline-block;
 }
 
 .subnav__item {
@@ -224,6 +229,9 @@ body {
 .subnav__item a {
     color: #333333;
     text-decoration: none;
+    display: block;
+    padding: 0 27px;
+    overflow: hidden;
 }
 
 /* hack so we can have a meaningful-ish navigationTitle and only use the first letter
@@ -234,8 +242,12 @@ body {
 }
 
 .subnav__item i::first-letter {
-    font-size: 16px;
+    font-size: 75px;
     font-family: 'Inca';
     font-style: normal;
     text-transform: uppercase;
+}
+
+.subnav__item a i::first-letter {
+    color: #25639f;
 }
