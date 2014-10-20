@@ -1,0 +1,17 @@
+<article class="destination destination--two-columns">
+    {.section collection}
+        <header class="destination__header content-fill">
+            {.section mainImage}
+                <img {@|image-meta}>
+            {.end}
+            <div class="destination__meta">
+                {description}
+            </div>
+        </header>
+    {.end}
+    <squarespace:folder-navigation template="destination" />
+    <main id="content" class="content destination__content" role="main" data-content-field="main-content">
+        {squarespace.main-content}
+    </main>
+</article>
+
