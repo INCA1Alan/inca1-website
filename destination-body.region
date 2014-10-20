@@ -1,4 +1,4 @@
-<article class="destination destination--one-column">
+<article class="destination">
     {.section collection}
         <header class="destination__header content-fill">
             {.section mainImage}
