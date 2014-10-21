@@ -1,5 +1,5 @@
-{.repeated section items}
 <section class="destination-grid">
+{.repeated section items}
     <article class="destination-item destination-item--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
         <a href="{sourceUrl}">
             <div class="destination-item__desc">
@@ -14,8 +14,7 @@
         </div>
         </a>
     </article>
-</section>
 {.or}
     <p>No trips yet.</p>
 {.end}
-
+</section>
