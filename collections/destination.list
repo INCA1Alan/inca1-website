@@ -1,17 +1,19 @@
 {.repeated section items}
-<section class="destination-item destination-item--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
-    <a href="{sourceUrl}">
-        <div class="destination-item__desc">
-            <h1 class="destination-item__title">{title}</h1>
-            {body}
+<section class="destination-grid">
+    <article class="destination-item destination-item--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+        <a href="{sourceUrl}">
+            <div class="destination-item__desc">
+                <h1 class="destination-item__title">{title}</h1>
+                {body}
+            </div>
+            {.excerpt?}
+            <aside class="destination-item__meta">
+                {excerpt}
+            </aside>
+            {.end}
         </div>
-        {.excerpt?}
-        <aside class="destination-item__meta">
-            {excerpt}
-        </aside>
-        {.end}
-    </div>
-    </a>
+        </a>
+    </article>
 </section>
 {.or}
     <p>No sections to display.</p>
