@@ -1,12 +1,12 @@
 {.repeated section items}
-<section class="destination destination--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+<section class="destination-item destination-item--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
     <a href="{sourceUrl}">
-        <div class="destination__desc">
-            <h1 class="destination__title">{title}</h1>
+        <div class="destination-item__desc">
+            <h1 class="destination-item__title">{title}</h1>
             {body}
         </div>
         {.excerpt?}
-        <aside class="destination__meta">
+        <aside class="destination-item__meta">
             {excerpt}
         </aside>
         {.end}
