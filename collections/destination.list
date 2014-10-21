@@ -1,9 +1,19 @@
-<section>
-    <p>items content comes next</p>
-    {.repeated section items}
-        <p>{id}</p>
-        <p>{body}</p>
-    {.or}
-        <p>no items!</p>
-    {.end}
+{.repeated section items}
+<section class="destination destination--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+    <a href="{sourceUrl}">
+        <div class="destination__desc">
+            <h1 class="destination__title">{title}</h1>
+            {body}
+        </div>
+        {.excerpt?}
+        <aside class="destination__meta">
+            {excerpt}
+        </aside>
+        {.end}
+    </div>
+    </a>
 </section>
+{.or}
+    <p>No sections to display.</p>
+{.end}
+
