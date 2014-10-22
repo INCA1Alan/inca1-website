@@ -384,10 +384,10 @@ p > a:first-child {
 .destination-item a {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
 
     color: white;
 }
@@ -424,13 +424,17 @@ p > a:first-child {
 
 .destination-grid {
     overflow: hidden;
+    margin-right: -5px;
+    margin-left: -5px;
 }
 
 .destination-item {
     float: left;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .tag-small {
-    width: 507px;
+    width: 50%;
     height: 370px;
 }
