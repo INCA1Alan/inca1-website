@@ -87,6 +87,15 @@ p > a:first-child {
     display: inline-block;
     text-decoration: none;
     font-size: 14px;
+
+    .destination--no-button & {
+        border: none;
+        padding: 0;
+        line-height: inherit;
+        height: auto;
+        display: inline;
+        font-size: inherit;
+    }
 }
 
 .section__title {
