@@ -22,7 +22,7 @@
                 </div>
             {.end}
         </header>
-        <squarespace:navigation navigationId="sitenav" template="navigation">
+        <squarespace:navigation navigationId="mainNav" template="navigation">
 
 <!--
         <div class="container">
