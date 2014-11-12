@@ -1,8 +1,8 @@
-<nav id="main-navigation" class="main-navigation" data-content-field="navigation-mainNav">
-  <ul class="main-navigation-list">
+<nav class="menu" data-content-field="navigation-mainNav">
+  <ul class="site-nav">
     {.repeated section items}
 
-        <li class="main-navigation-item {.section active} active-link{.end}{.if folderActive} active-folder{.end}">
+        <li class="site-nav__item{.section active}{.end}{.if folderActive}{.end}">
 
           {.folder?}
 
@@ -10,14 +10,14 @@
 
               <a href="{collection.fullUrl}">{collection.navigationTitle}</a>
 
-              <ul>
+              <ul class="sub-nav">
 
                 {.repeated section items}
 
                   <!--COLLECTION IN A FOLDER-->
 
                   {.collection?}
-                    <li class="{.section active} active-link{.end}">
+                    <li class="sub-nav__item {.section active}{.end}">
                       <a href="{collection.fullUrl}">
                         {collection.navigationTitle}
                       </a>
@@ -27,7 +27,7 @@
                   <!--EXTERNAL LINK IN A FOLDER-->
 
                   {.section externalLink}
-                    <li class="main-navigation-dropdown">
+                    <li class="sub-nav__item sub-nav__item--external">
                       <a href="{url}"{.section newWindow} target="_blank"{.end}>
                         {title}
                       </a>

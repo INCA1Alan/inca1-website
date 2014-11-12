@@ -22,6 +22,7 @@
                 </div>
             {.end}
         </header>
+        <squarespace:navigation navigationId="sitenav" template="navigation">
 
 <!--
         <div class="container">
