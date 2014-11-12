@@ -606,8 +606,11 @@ p > a:first-child {
     margin-bottom: 14px;
 }
 
-.menu__close,
-.menu__open {
+.header__content * {
+    display: inline-block;
+}
+
+.menu__close {
     border: none;
     background: none;
     font-family: 'Open Sans', sans-serif;
@@ -616,5 +619,11 @@ p > a:first-child {
 }
 
 .menu__open {
+    border: none;
+    background: none;
+    font-family: 'Open Sans', sans-serif;
     color: #666;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
