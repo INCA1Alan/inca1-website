@@ -41,14 +41,19 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
 
         var $menuOpen = Y.one('.menu__open');
         var $menuClose = Y.one('.menu__close');
+        var $menuUnderlay = Y.one('menu__underlay');
 
-        $menuOpen.on('click', function() {
+        var openMenu = function() {
             $html.addClass('show-menu');
-        });
+        };
 
-        $menuClose.on('click', function() {
+        var closeMenu = function() {
             $html.removeClass('show-menu');
-        });
+        };
+
+        $menuOpen.on('click', openMenu); 
+        $menuClose.on('click', closeMenu);
+        $menuUnderlay.on('click', closeMenu);
 
     });
 });
