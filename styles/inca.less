@@ -568,6 +568,12 @@ p > a:first-child {
     padding: 40px;
 
     z-index: 3;
+
+    display: none;
+
+    .show-menu & {
+        display: block;
+    }
 }
 
 .menu a {
@@ -600,10 +606,15 @@ p > a:first-child {
     margin-bottom: 14px;
 }
 
-.menu__close {
+.menu__close,
+.menu__open {
     border: none;
     background: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     color: white;
+}
+
+.menu__open {
+    color: #666;
 }
