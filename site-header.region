@@ -13,11 +13,7 @@
         <header class="header">
             {.section website}
                 <a class="logo" href="/">
-                    {.section logoImageUrl}
-                        <img src="{logoImageUrl}?format=original" alt="{siteTitle}">
-                    {.or}
-                        {siteTitle}
-                    {.end}
+                    <img src="/assets/inca.svg" alt="{siteTitle}">
                 </a>
             {.end}
         </header>
