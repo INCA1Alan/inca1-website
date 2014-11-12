@@ -574,16 +574,15 @@ p > a:first-child {
     .show-menu & {
         display: block;
     }
+}
 
-    &:before {
-        content: ' ';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.8);
-    }
+.menu__underlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .menu a {

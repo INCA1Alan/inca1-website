@@ -1,3 +1,4 @@
+<div class="menu__underlay"></div>
 <nav class="menu" data-content-field="navigation-mainNav">
 
     <button class="menu__close" type="button">x</button>
