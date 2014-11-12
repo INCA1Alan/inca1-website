@@ -6,9 +6,6 @@
             {.end}
             <div class="destination__meta">
                 {description}
-                <nav class="header-nav">
-                    <button type="button" class="menu__open">Menu</button>
-                </nav>
             </div>
         </header>
     {.end}

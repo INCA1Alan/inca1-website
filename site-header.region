@@ -19,6 +19,9 @@
                     {.section siteTagLine}
                         <p>{@}</p>
                     {.end}
+                    <nav class="header-nav">
+                        <button type="button" class="menu__open">Menu</button>
+                    </nav>
                 </div>
             {.end}
         </header>
