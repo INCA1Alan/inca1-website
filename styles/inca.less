@@ -618,6 +618,23 @@ p > a:first-child {
     color: white;
 }
 
+.header-nav {
+    position: relative;
+    margin-left: 20px;
+
+    &:before {
+        content: ' ';
+        display: block;
+        width: 1px;
+        height: 15px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        background #ccc;
+    }
+}
+
 .menu__open {
     border: none;
     background: none;
@@ -626,4 +643,5 @@ p > a:first-child {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
+    padding: 0 20px;
 }
