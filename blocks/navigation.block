@@ -8,7 +8,7 @@
 
             <!--FOLDER-->
 
-              <a href="{collection.fullUrl}">{collection.navigationTitle}</a>
+              <a href="{collection.fullUrl}">{collection.pageTitle}</a>
 
               <ul class="sub-nav">
 
@@ -19,7 +19,7 @@
                   {.collection?}
                     <li class="sub-nav__item {.section active}{.end}">
                       <a href="{collection.fullUrl}">
-                        {collection.navigationTitle}
+                        {collection.pageTitle}
                       </a>
                     </li>
                   {.end}
@@ -42,7 +42,7 @@
             <!--COLLECTION-->
 
             {.section collection}
-              <a href="{fullUrl}">{navigationTitle}</a>
+              <a href="{fullUrl}">{pageTitle}</a>
             {.end}
 
             <!--EXTERNAL LINK-->
