@@ -13,7 +13,11 @@
         <header class="header">
             {.section website}
                 <a class="logo" href="/">
-                    <img src="{logoImageUrl}?format=original" alt="{siteTitle}">
+                    {.section logoImageUrl}
+                        <img src="{logoImageUrl}?format=original" alt="{siteTitle}">
+                    {.or}
+                        {siteTitle}
+                    {.end}
                 </a>
             {.end}
         </header>
