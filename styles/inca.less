@@ -645,3 +645,13 @@ p > a:first-child {
     letter-spacing: 1px;
     padding: 0 20px;
 }
+
+.menu__open,
+.menu__close {
+    outline: none;
+    transform: translateY(0);
+
+    &:active {
+        transform: translateY(1px);
+    }
+}
