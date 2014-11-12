@@ -41,7 +41,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
 
         var $menuOpen = Y.one('.menu__open');
         var $menuClose = Y.one('.menu__close');
-        var $menuUnderlay = Y.one('menu__underlay');
+        var $menuUnderlay = Y.one('.menu__underlay');
 
         var openMenu = function() {
             $html.addClass('show-menu');
