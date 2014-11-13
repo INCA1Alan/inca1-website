@@ -14,7 +14,7 @@
 
                     <a href="{collection.fullUrl}">{collection.title}</a>
 
-                    {.equal? collection.title "Trip Finder"}
+                    {.equal? collection.title "test"}
 
                         <ul class="sub-nav">
 
