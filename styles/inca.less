@@ -41,34 +41,96 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    min-width: 320px;
+    height: 62px;
     box-sizing: border-box;
-    padding: 16px;
+    padding: 10px;
     //background: rgba(0, 6, 12, 0.85);
     background: rgba(255, 255, 255, 0.9);
     z-index: 1000;
     .clearfix;
 }
 
+@media screen and (min-width: 768px) {
+    .header {
+        height: 100px;
+        padding: 16px;
+    }
+}
+
 .header__logo {
     float: left;
 }
 
-.logo img {
+.logo--large {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    display: inline-block;
+}
+
+.logo--large img {
     height: 68px;
+}
+
+.logo--small {
+    display: inline-block;
+}
+
+.logo--small img {
+    height: 42px;
 }
 
 .header__content {
     float: right;
-    line-height: 68px;
+    line-height: 42px;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
     color: #666;
+
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__content {
+        display: block;
+        line-height: 68px;
+    }
 }
 
 .header__content p {
     margin: 0;
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__content p {
+        display: block;
+    }
+}
+
+.header-nav {
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .header-nav {
+        margin-left: 20px;
+
+        &:before {
+            content: ' ';
+            display: block;
+            width: 1px;
+            height: 15px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            background: #ccc;
+        }
+    }
 }
 
 .content li {
@@ -626,23 +688,6 @@ p > a:first-child {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     color: white;
-}
-
-.header-nav {
-    position: relative;
-    margin-left: 20px;
-
-    &:before {
-        content: ' ';
-        display: block;
-        width: 1px;
-        height: 15px;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translate(0, -50%);
-        background: #ccc;
-    }
 }
 
 .menu__open {
