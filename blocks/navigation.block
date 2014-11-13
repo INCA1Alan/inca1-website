@@ -12,9 +12,9 @@
 
                     <!--FOLDER-->
 
-                    <a href="{collection.fullUrl}">{collection.title} {collection.urlId}</a>
+                    <a href="{collection.fullUrl}">{collection.title}</a>
 
-                    {.equal? collection.title 'test%20test'}
+                    {.equal? collection.urlId 'trip-finder'}
 
                         <ul class="sub-nav">
 
