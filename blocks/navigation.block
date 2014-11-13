@@ -14,33 +14,37 @@
 
                     <a href="{collection.fullUrl}">{collection.title}</a>
 
-                    <ul class="sub-nav">
+                    {.equal? collection.title "Trip Finder"}
 
-                        {.repeated section items}
+                        <ul class="sub-nav">
 
-                            <!--COLLECTION IN A FOLDER-->
+                            {.repeated section items}
 
-                            {.collection?}
-                                <li class="sub-nav__item {.section active}{.end}">
-                                    <a href="{collection.fullUrl}">
-                                        {collection.title}
-                                    </a>
-                                </li>
+                                <!--COLLECTION IN A FOLDER-->
+
+                                {.collection?}
+                                    <li class="sub-nav__item {.section active}{.end}">
+                                        <a href="{collection.fullUrl}">
+                                            {collection.title}
+                                        </a>
+                                    </li>
+                                {.end}
+
+                                <!--EXTERNAL LINK IN A FOLDER-->
+
+                                {.section externalLink}
+                                    <li class="sub-nav__item sub-nav__item--external">
+                                        <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                                            {title}
+                                        </a>
+                                    </li>
+                                {.end}
+
                             {.end}
 
-                            <!--EXTERNAL LINK IN A FOLDER-->
+                        </ul>
 
-                            {.section externalLink}
-                                <li class="sub-nav__item sub-nav__item--external">
-                                    <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                                        {title}
-                                    </a>
-                                </li>
-                            {.end}
-
-                        {.end}
-
-                    </ul>
+                    {.end}
                             
                 {.or}
 
