@@ -71,7 +71,9 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-    display: inline-block;
+    .logo--large {
+        display: inline-block;
+    }
 }
 
 .logo--large img {
@@ -80,6 +82,12 @@ h1 {
 
 .logo--small {
     display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+    .logo--small {
+        display: none;
+    }
 }
 
 .logo--small img {
