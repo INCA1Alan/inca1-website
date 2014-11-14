@@ -621,11 +621,17 @@ p > a:first-child {
 
     z-index: 1000;
 
+    overflow: auto;
+
     display: none;
 
     .show-menu & {
         display: block;
     }
+}
+
+.show-menu {
+    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
