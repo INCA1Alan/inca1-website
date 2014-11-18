@@ -381,7 +381,7 @@ p > a:first-child {
 }
 
 .destination__meta strong {
-    font-size: 60px;
+    font-size: 35px;
     line-height: 1.2;
     font-weight: 300;
     letter-spacing: 6px;
@@ -389,6 +389,13 @@ p > a:first-child {
     max-width: 990px;
     display: block;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .destination__meta strong {
+        font-size: 60px;
+        letter-spacing: 6px;
+    }
 }
 
 .destination__meta em {
