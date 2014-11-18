@@ -416,11 +416,17 @@ p > a:first-child {
 }
 
 .destination__meta em {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: 5px;
     text-transform: uppercase;
     font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+    .destination__meta em {
+        font-size: 14px;
+    }
 }
 
 .subnav {
