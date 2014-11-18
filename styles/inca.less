@@ -331,7 +331,7 @@ p > a:first-child {
 
 .destination__header {
     width: 100%;
-    height: 520px;
+    height: 324px;
     position: relative;
 
     .destination--short-header & {
@@ -355,21 +355,38 @@ p > a:first-child {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .destination__header {
+        height: 520px;
+
+        .destination--short-header & {
+            height: 305px;
+        }
+    }
+}
+
 .destination__meta {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translateY(-50%);
     width: 100%;
-    margin-top: 48px;
+    margin-top: 28px;
 
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
 
     color: white;
 
     z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+    .destination__meta {
+        font-size: 30px;
+        margin-top: 48px;
+    }
 }
 
 .destination__meta p {
@@ -411,6 +428,9 @@ p > a:first-child {
     border-bottom: 1px #cccccc solid;
     max-width: 1022px;
     margin: 0 auto 64px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    line-height: 0;
 }
 
 .subnav ul {
@@ -419,6 +439,7 @@ p > a:first-child {
     margin: 0;
     font-size: 0;
     display: inline-block;
+    white-space: nowrap;
 }
 
 .subnav__item {
@@ -460,6 +481,7 @@ p > a:first-child {
 
 .subnav__item span {
     letter-spacing: 1px;
+    white-space: normal;
 }
 
 .subnav__item {
@@ -538,6 +560,11 @@ p > a:first-child {
     font-size: 30px;
     font-weight: 300;
     font-style: normal;
+}
+
+.sqs-layout > .sqs-row {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 /* destination grid items, like in the trip finder */
