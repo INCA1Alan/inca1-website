@@ -568,10 +568,12 @@ p > a:first-child {
     font-style: normal;
 }
 
+/*  TODO: not sure when we actually want to use this
 .sqs-layout > .sqs-row {
     margin-left: -10px;
     margin-right: -10px;
 }
+*/
 
 /* destination grid items, like in the trip finder */
 .destination-item {
@@ -612,11 +614,11 @@ p > a:first-child {
     position: absolute;
     left: 40px;
     bottom: 25px;
-    width: 420px;
+    right: 40px;
+    max-width: 420px;
 
     .tag-small & {
         width: auto;
-        right: 40px;
     }
 }
 
@@ -650,9 +652,11 @@ p > a:first-child {
     box-sizing: border-box;
 }
 
-.tag-small {
-    width: 50%;
-    height: 370px;
+@media screen and (min-width: 768px) {
+    .tag-small {
+        width: 50%;
+        height: 370px;
+    }
 }
 
 .menu {
