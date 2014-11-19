@@ -380,6 +380,9 @@ p > a:first-child {
     color: white;
 
     z-index: 2;
+
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -578,11 +581,17 @@ p > a:first-child {
 /* destination grid items, like in the trip finder */
 .destination-item {
     width: 100%;
-    height: 470px;
+    height: 370px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .destination-item {
+        height: 470px;
+    }
 }
 
 .destination-item a {
@@ -612,9 +621,9 @@ p > a:first-child {
 
 .destination-item__desc {
     position: absolute;
-    left: 40px;
-    bottom: 25px;
-    right: 40px;
+    left: 20px;
+    bottom: 0px;
+    right: 20px;
     max-width: 420px;
 
     .tag-small & {
@@ -622,18 +631,40 @@ p > a:first-child {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .destination-item__desc {
+        left: 40px;
+        bottom: 25px;
+        right: 40px;
+    }
+}
+
 .destination-item__title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 300;
     margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+    .destination-item__title {
+        font-size: 30px;
+    }
+}
+
 .destination-item__meta {
     position: absolute;
-    top: 25px;
-    right: 40px;
+    top: 12px;
+    right: 20px;
     font-size: 30px;
     font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+    .destination-item__meta {
+        top: 25px;
+        right: 40px;
+        font-size: 30px;
+    }
 }
 
 .destination-item__meta p {
