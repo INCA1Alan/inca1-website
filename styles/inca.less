@@ -178,8 +178,11 @@ h1 {
     margin-top: 0;
 }
 
-.section {
-    min-height: 610px;
+@media screen and (min-width: 1440px) {
+    // TODO: delete me
+    .section {
+        min-height: 610px;
+    }
 }
 
 .section {
@@ -189,6 +192,7 @@ h1 {
     position: relative;
     font-size: 14px;
 
+    padding: 0 20px;
 
     p {
         margin-bottom: 1.8em;
