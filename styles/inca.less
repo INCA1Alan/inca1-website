@@ -305,11 +305,17 @@ p > a:first-child {
 
 /* special case: table for that one home page section */
 .section__table {
-    font-size: 16px;
-    position: absolute;
-    width: 500px;
-    top: 90px;
-    right: 210px;
+    font-size: 0;
+}
+
+@media screen and (min-width: 1440px) {
+    .section__table {
+        position: absolute;
+        width: 500px
+        top: 90px;
+        right: 210px;
+        font-size: 16px;
+    }
 }
 
 .section__table ul {
@@ -332,9 +338,16 @@ p > a:first-child {
 .section__table strong {
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 30px;
+    letter-spacing: 3px;
+    font-size: 18px;
     margin-right: 0.3em;
-    letter-spacing: 5px;
+}
+
+@media screen and (min-width: 1440px) {
+    .section__table strong {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
 }
 
 .section__table em {
@@ -344,7 +357,13 @@ p > a:first-child {
     font-style: normal;
     margin-right: 0.3em;
     position: relative;
-    top: -4px;
+    top: 1px;
+}
+
+@media screen and (min-width: 1440px) {
+    .section__table em {
+        top: -4px;
+    }
 }
 
 .section__table a {
@@ -354,8 +373,15 @@ p > a:first-child {
     display: block;
     border: none;
     padding: 0 15px;
-    line-height: 46px;
-    height: 58px;
+    line-height: 18px;
+    height: 45px;
+}
+
+@media screen and (min-width: 1440px) {
+    .section__table a {
+        line-height: 46px;
+        height: 58px;
+    }
 }
 
 .destination__header {
