@@ -1,7 +1,10 @@
 <section class="destination-grid">
 {.repeated section items}
     <article class="destination-item destination-item--{title|slugify} {@|item-classes}">
-        <a href="{sourceUrl}" style="background-image: url({assetUrl})">
+        <a href="{sourceUrl}" class="content-fill">
+            {.assetUrl?}
+                <img {@|image-meta}>
+            {.end}
             <div class="destination-item__desc">
                 <h1 class="destination-item__title">{title}</h1>
                 {body}
