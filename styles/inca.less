@@ -304,20 +304,19 @@ p > a:first-child {
     }
 
     .section__title,
-    .section .sqs-layout {
-        .section &,
-        .tag-center & {
-            width: 830px;
-            margin: 0 auto;
-        }
+    .section .sqs-layout, 
+    .tag-center .section__title,
+    .section.tag-center .sqs-layout {
+        width: 830px;
+        margin: 0 auto;
     }
 
     .section__title,
-    .section .sqs-layout {
-        .tag-left & {
-            width: 505px;
-            margin: 0;
-        }
+    .section .sqs-layout,
+    .tag-left .section__title,
+    .section.tag-left .sqs-layout {
+        width: 505px;
+        margin: 0;
     }
 
 }
