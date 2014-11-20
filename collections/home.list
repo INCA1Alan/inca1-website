@@ -1,5 +1,8 @@
 {.repeated section items}
-<section class="section section--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+<section class="section section--{title|slugify} {@|item-classes} content-fill">
+    {.assetUrl?}
+        <img {@|img-meta}>
+    {.end}
     <div class="section__layout">
         <h1 class="section__title">{title}</h1>
         {body}
