@@ -319,8 +319,13 @@ p > a:first-child {
 
 /* special case: table for that one home page section */
 .section__table {
-    font-size: 0;
     max-width: 500px;
+}
+
+@media screen and (max-width: 399px) {
+    .section__table {
+        font-size: 0;
+    }
 }
 
 @media screen and (min-width: 1440px) {
