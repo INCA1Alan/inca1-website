@@ -1,5 +1,5 @@
 {.repeated section items}
-<section class="section section--{title|slugify} {@|item-classes} content-fill">
+<section class="section section--{title|slugify} {@|item-classes} content-fit">
     {.assetUrl?}
         <img {@|image-meta}>
     {.end}
