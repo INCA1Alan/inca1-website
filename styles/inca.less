@@ -197,6 +197,10 @@ h1 {
     }
 }
 
+.tag-full-width {
+    padding: 0;
+}
+
 @media screen and (min-width: 768px) {
     .section {
         font-size: 20px;
@@ -316,6 +320,11 @@ p > a:first-child {
         .tag-left & {
             max-width: 1214px;
         }
+
+        .tag-full-width & {
+            width: auto;
+            padding: 0;
+        }
     }
 
     .section__layout {
@@ -350,6 +359,10 @@ p > a:first-child {
         width: 505px;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .section.tag-full-width .sqs-layout {
+        width: auto;
     }
 
 }
