@@ -199,6 +199,7 @@ h1 {
 
 .tag-full-width {
     padding: 0;
+    margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -240,6 +241,10 @@ p > a:first-child {
     line-height: 1.2;
     letter-spacing: 4px;
     margin-bottom: 0;
+
+    .tag-full-width & {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -316,6 +321,12 @@ p > a:first-child {
         width: 1214px;
         padding: 0 10px;
 
+        margin: 120px auto;
+
+        .section--why-inca & {
+            margin-top: 165px;
+        }
+
         .tag-center &,
         .tag-left & {
             max-width: 1214px;
@@ -324,14 +335,7 @@ p > a:first-child {
         .tag-full-width & {
             width: auto;
             padding: 0;
-        }
-    }
-
-    .section__layout {
-        margin: 120px auto;
-
-        .section--why-inca & {
-            margin-top: 165px;
+            margin: 0;
         }
     }
 
@@ -702,7 +706,6 @@ p > a:first-child {
     bottom: 0;
     left: 0;
     color: white;
-    background: linear-gradient(0deg, rgba(4, 45, 86, 0.5), rgba(4, 45, 86, 0));
     display: block;
     box-sizing: border-box;
     padding: 10px;
