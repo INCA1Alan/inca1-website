@@ -278,6 +278,7 @@ p > a:first-child {
 
 .section__layout {
     position: relative;
+    .clearfix;
 
     .tag-center & {
         max-width: 830px;
@@ -294,6 +295,13 @@ p > a:first-child {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .tag-right & {
+        max-width: 505px;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+    }
 }
 
 .tag-center {
@@ -305,7 +313,12 @@ p > a:first-child {
     background-position: bottom right;
     background-size: contain;
     padding-bottom: 60%;
+}
 
+.tag-right {
+    background-position: bottom left;
+    background-size: contain;
+    padding-bottom: 60%;
 }
 
 .section--not-typical-tourist-attractions {
@@ -318,6 +331,10 @@ p > a:first-child {
 
 @media screen and (min-width: 1214px) {
     .tag-left {
+        padding-bottom: 0;
+    }
+
+    .tag-right {
         padding-bottom: 0;
     }
 
@@ -336,7 +353,8 @@ p > a:first-child {
         }
 
         .tag-center &,
-        .tag-left & {
+        .tag-left &,
+        .tag-right & {
             max-width: 1214px;
         }
 
