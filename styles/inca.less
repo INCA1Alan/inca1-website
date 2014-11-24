@@ -315,7 +315,6 @@ p > a:first-child {
 
 .tag-newsletter {
     background-position: bottom center;
-    background-size: auto;
     padding-bottom: 60%;
 }
 
@@ -419,6 +418,16 @@ p > a:first-child {
 /* alternate section style: cover (expand bg to cover the section) */
 .tag-cover {
     background-size: cover;
+}
+
+.tag-newsletter {
+    background-size: auto;
+}
+
+@media screen and (min-width: 1214px) {
+    .tag-newsletter {
+        background-size: contain;
+    }
 }
 
 /* special case: table for that one home page section */
