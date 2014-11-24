@@ -421,7 +421,13 @@ p > a:first-child {
 }
 
 .tag-newsletter {
-    background-size: auto;
+    background-size: contain;
+}
+
+@media screen and (min-width: 784px) {
+    .tag-newsletter {
+        background-size: auto;
+    }
 }
 
 @media screen and (min-width: 1214px) {
