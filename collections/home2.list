@@ -1,0 +1,8 @@
+{.repeated nection items}
+    <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+        {body}
+    </section>
+{.or}
+    <p>No nections to display.</p>
+{.end}
+
