@@ -1,4 +1,4 @@
-{.repeated nection items}
+{.repeated section items}
     <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
         {body}
     </section>
