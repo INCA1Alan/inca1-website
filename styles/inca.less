@@ -1154,6 +1154,8 @@ p > a:first-child {
 
 .tag-bg-full {
     background-size: cover;
+    background-position: center; 
+    padding: 140px 20px;
 }
 
 
@@ -1161,5 +1163,17 @@ p > a:first-child {
     .nection .sqs-layout [class*=sqs-col] {
         float: none !important;
         width: auto !important;
+    }
+}
+
+.tag-image-flush-bottom {
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 48em) {
+    .tag-image-flush-bottom {
+        .sqs-layout .sqs-row .sqs-block:last-child {
+            padding-bottom: 0 !important;
+        }
     }
 }
