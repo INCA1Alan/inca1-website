@@ -1089,12 +1089,20 @@ p > a:first-child {
 @media screen and (min-width: 768px) {
     .nection {
         font-size: 20px;
+
+        &:first-child {
+            padding-top: 100px;
+        }
     }
 }
 
 @media screen and (min-width: 1214px) {
     .nection {
         min-height: 610px;
+
+        &:first-child {
+            padding-top: 160px;
+        }
     }
 }
 
@@ -1132,6 +1140,14 @@ p > a:first-child {
 
 @media screen and (min-width: 768px) {
     .tag-bg-right {
+        padding-bottom: 350px;
+        background-size: 700px auto;
+    }
+}
+
+@media screen and (min-width: 1214px) {
+    .tag-br-right {
+        background-size: auto;
     }
 }
 
