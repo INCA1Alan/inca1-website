@@ -634,10 +634,16 @@ p > a:first-child {
     text-align: center;
     border-bottom: 1px #cccccc solid;
     max-width: 1022px;
-    margin: 0 auto 64px;
+    margin: 0 auto 12px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .subnav {
+        margin-bottom: 64px;
+    }
 }
 
 .subnav ul {
