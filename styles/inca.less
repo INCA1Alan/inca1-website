@@ -598,9 +598,10 @@ p > a:first-child {
 }
 
 .destination__meta strong {
-    font-size: 35px;
+    font-size: 26px;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
+    text-shadow: 0 0px 7px black;
     letter-spacing: 6px;
     text-transform: uppercase;
     max-width: 990px;
@@ -650,20 +651,32 @@ p > a:first-child {
 
 .subnav__item {
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 14px;
     text-align: center;
     display: inline-block;
     vertical-align: top;
 }
 
+@media screen and (min-width: 768px) {
+    .subnav__item {
+        font-size: 14px;
+    }
+}
+
 .subnav__item a {
     color: #333333;
     text-decoration: none;
     display: block;
-    padding: 27px 23px;
+    padding: 9px 13px 17px;
     width: 94px;
     overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    .subnav__item a {
+        padding: 27px 23px;
+    }
 }
 
 /* hack so we can have a meaningful-ish navigationTitle and only use the first letter
@@ -671,14 +684,26 @@ p > a:first-child {
 .subnav__item i {
     font-size: 0;
     display: block;
-    margin-bottom: 27px;
+    margin-bottom: 9px;
+}
+
+@media screen and (min-width: 768px) {
+    .subnav__item i {
+        margin-bottom: 27px;
+    }
 }
 
 .subnav__item i::first-letter {
-    font-size: 75px;
+    font-size: 55px;
     font-family: 'Inca';
     font-style: normal;
     text-transform: none;
+}
+
+@media screen and (min-width: 768px) {
+    .subnav__item i::first-letter {
+        font-size: 75px;
+    }
 }
 
 .subnav__item a i::first-letter {
