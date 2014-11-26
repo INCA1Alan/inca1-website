@@ -1071,9 +1071,6 @@ p > a:first-child {
     }
 }
 
-
-
-
 .nection {
     box-sizing: border-box;
     text-align: center;
@@ -1083,6 +1080,10 @@ p > a:first-child {
     font-size: 14px;
 
     padding: 20px;
+
+    &:first-child {
+        padding-top: 62px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1125,9 +1126,23 @@ p > a:first-child {
 
 .tag-bg-right {
     background-position: bottom right;
+    background-size: 350px auto;
+    padding-bottom: 250px;
+}
+
+@media screen and (min-width: 768px) {
+    .tag-bg-right {
+    }
 }
 
 .tag-bg-full {
     background-size: cover;
 }
 
+
+@media screen and (max-width: 1213em) {
+    .nection .sqs-layout [class*=sqs-col] {
+        float: none !important;
+        width: auto !important;
+    }
+}
