@@ -1249,7 +1249,7 @@ p > a:first-child {
 /* default section style: dark text on light background */
 .nection,
 .tag-dark {
-    a {
+    .sqs-block-button .sqs-block-button-element {
         color: #25639f;
         border-color: #25639f;
     }
@@ -1257,8 +1257,15 @@ p > a:first-child {
 
 /* alternate section style: light text on dark background */
 .tag-light {
-    a {
+    .sqs-block-button .sqs-block-button-element {
         color: #ffffff;
         border-color: #ffffff;
     }
+}
+
+.small-button-style-solid .sqs-block-button .sqs-block-button-element--small:hover,
+.medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium:hover,
+.large-button-style-solid .sqs-block-button .sqs-block-button-element--large:hover {
+    opacity: 1;
+    transition: none;
 }
