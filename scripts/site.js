@@ -67,7 +67,8 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
                 var introStyles = {
                     width:  w,
                     height: h,
-                    position: 'relative'
+                    position: 'relative',
+                    overflow: 'hidden'
                 };
 
                 var videoStyles = {
