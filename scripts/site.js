@@ -91,6 +91,8 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
 
                 $intro.setStyles(introStyles);
                 $video.setStyles(videoStyles);
+
+                $html.addClass('video-ready');
             }
 
             Y.one(window).on('resize', sizeVideo, this);
