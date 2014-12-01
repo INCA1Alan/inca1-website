@@ -1271,3 +1271,13 @@ p > a:first-child {
     opacity: 1;
     transition: none;
 }
+
+
+.intro {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+
+    .video-ready & {
+        opacity: 1;
+    }
+}
