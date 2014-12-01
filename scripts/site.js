@@ -38,6 +38,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             =============================== */
 
         var $html = Y.one('html');
+        var $body = Y.one('body');
 
         var $menuOpen = Y.one('.menu__open');
         var $menuClose = Y.one('.menu__close');
@@ -54,6 +55,47 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
         $menuOpen.on('click', openMenu); 
         $menuClose.on('click', closeMenu);
         $menuUnderlay.on('click', closeMenu);
+
+        if ($body.hasClass('homepage')) {
+            var $intro = Y.one('.intro');
+            var $video = Y.one('.intro__video');
+
+            function sizeVideo() {
+                var w = window.innerWidth;
+                var h = window.innerHeight;
+
+                var introStyles = {
+                    width:  w,
+                    height: h,
+                    position: 'relative'
+                };
+
+                var videoStyles = {
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)'
+                };
+
+                if (w > (h * 16/9)) {
+                    
+                    videoStyles.width  = w;
+                    videoStyles.height = w * (9/16);
+
+                } else {
+
+                    videoStyles.height = h;
+                    videoStyles.width  = h * (16/9);
+
+                }
+
+                $intro.setStyles(introStyles);
+                $video.setStyles(videoStyles);
+            }
+
+            Y.one(window).on('resize', sizeVideo, this);
+            sizeVideo();
+        }
 
     });
 });
