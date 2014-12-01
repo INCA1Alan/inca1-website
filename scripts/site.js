@@ -67,7 +67,8 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
                 var introStyles = {
                     width:  w,
                     height: h,
-                    position: 'relative'
+                    position: 'relative',
+                    overflow: 'hidden'
                 };
 
                 var videoStyles = {
@@ -91,8 +92,6 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
 
                 $intro.setStyles(introStyles);
                 $video.setStyles(videoStyles);
-
-                $html.addClass('video-ready');
             }
 
             Y.one(window).on('resize', sizeVideo, this);
