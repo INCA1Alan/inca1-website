@@ -1,7 +1,7 @@
 {.repeated section items}
     {.equal? title "Intro"}
 
-        <section class="intro">
+        <section class="intro nection nection--{title|slugify} {@|item-classes}">
             <video autoplay loop class="intro__video">
                 <source src="http://playgroundinc.com/inca.mp4" type="video/mp4">
             </video>
