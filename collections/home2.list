@@ -1,7 +1,19 @@
 {.repeated section items}
-    <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
-        {body}
-    </section>
+    {equal? title "Intro"}
+
+        <section class="intro">
+            <video autoplay loop class="intro__video">
+                <source src="http://playgroundinc.com/inca.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    {.or}
+
+        <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+            {body}
+        </section>
+
+    {.end}
 {.or}
     <p>No nections to display.</p>
 {.end}
