@@ -1249,7 +1249,8 @@ p > a:first-child {
     }
 }
 
-.sqs-block-button .sqs-block-button-element {
+.sqs-block-button .sqs-block-button-element,
+.form-block .lightbox-handle {
     .button;
 }
 
@@ -1263,7 +1264,8 @@ p > a:first-child {
 /* default section style: dark text on light background */
 .nection,
 .tag-dark {
-    .sqs-block-button .sqs-block-button-element {
+    .sqs-block-button .sqs-block-button-element
+    .form-block .lightbox-handle {
         color: #25639f;
         border-color: #25639f;
     }
@@ -1271,7 +1273,8 @@ p > a:first-child {
 
 /* alternate section style: light text on dark background */
 .tag-light {
-    .sqs-block-button .sqs-block-button-element {
+    .sqs-block-button .sqs-block-button-element,
+    .form-block .lightbox-handle {
         color: #ffffff;
         border-color: #ffffff;
     }
@@ -1377,16 +1380,22 @@ p > a:first-child {
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content {
     background: #25639f;
     color: white;
-    max-width: 420px;
+    max-width: 470px;
     padding: 86px;
 }
 
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content .form-wrapper .form-title {
     color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content .lightbox-close {
     color: white;
+}
+
+.sqs-modal-lightbox-content .lightbox-inner .lightbox-content .form-wrapper .form-inner-wrapper form {
+    margin-top: 20px;
 }
 
 .form-wrapper .field-list .field .field-element {
@@ -1415,6 +1424,10 @@ p > a:first-child {
     .button;
 
     border-color: white;
+}
+
+.form-wrapper input[type=submit] {
+    margin-top: 20px;
 }
 
 .form-wrapper input::-moz-placeholder {
