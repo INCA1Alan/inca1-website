@@ -67,7 +67,6 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
                 var introStyles = {
                     width:  w,
                     height: h,
-                    position: 'relative',
                     overflow: 'hidden'
                 };
 
