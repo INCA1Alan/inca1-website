@@ -29,3 +29,4 @@
             {.end}
         </header>
         <squarespace:navigation navigationId="mainNav" template="navigation">
+        <div class="body">
