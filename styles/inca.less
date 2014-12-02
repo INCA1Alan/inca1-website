@@ -1248,9 +1248,11 @@ p > a:first-child {
     background: none;
 }
 
-.sqs-block-button .sqs-block-button-element--large {
-    font-size: 27px;
-    font-weight: 300;
+@media screen and (min-width: 768px) {
+    .sqs-block-button .sqs-block-button-element--large {
+        font-size: 27px;
+        font-weight: 300;
+    }
 }
 
 /* default section style: dark text on light background */
