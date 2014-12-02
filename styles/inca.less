@@ -1248,6 +1248,11 @@ p > a:first-child {
     background: none;
 }
 
+.sqs-block-button .sqs-block-button-element--large {
+    font-size: 27px;
+    font-weight: 300;
+}
+
 /* default section style: dark text on light background */
 .nection,
 .tag-dark {
@@ -1314,8 +1319,19 @@ p > a:first-child {
     max-width: 430px;
 }
 
+@media screen and (max-width: 1213px) {
+    .intro__content .sqs-block-spacer {
+        height: 0 !important;
+        padding: 0 !important;
+    }
+}
+
 @media screen and (min-width: 1214px) {
     .intro__content {
         max-width: 1214px;
+    }
+
+    .intro__content h1 {
+        margin: 0 -30px .4em;
     }
 }
