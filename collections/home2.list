@@ -1,5 +1,5 @@
 {.repeated section items}
-    {equal? title "Intro"}
+    {.equal? title "Intro"}
 
         <section class="intro">
             <video autoplay loop class="intro__video">
