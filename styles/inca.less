@@ -1361,30 +1361,27 @@ p > a:first-child {
     }
 }
 
-.form {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-
-    background: rgba(255, 255, 255, 0.8);
+.form--newsletter {
+    display: none;
 }
 
-.form__layout {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.form--contact {
+    display: none;
+}
 
+.sqs-modal-lightbox-content .lightbox-background {
+    background: white;
+    opacity: 0.5;
+}
+
+.sqs-modal-lightbox-content .lightbox-inner .lightbox-content {
     background: #25639f;
     color: white;
-
-    padding: 86px;
+    max-width: 420px;
+    padding: 96px;
 }
 
-.form .form-wrapper .field-list .field .field-element {
+.form-wrapper .field-list .field .field-element {
     background: none;
     border: none;
     border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
@@ -1395,16 +1392,21 @@ p > a:first-child {
     font-size: 14px;
 }
 
-.form .form-wrapper input[type=submit] {
+.form-wrapper input[type=submit] {
     .button;
 
     border-color: white;
 }
 
-.form--newsletter {
-    display: none;
+.form-wrapper input::-moz-placeholder {
+    opacity: 1;
+    color: white;
 }
 
-.form--contact {
-    display: none;
+.form-wrapper ::-webkit-input-placeholder {
+    color: white;
+}
+
+.form-wrapper .form-button-wrapper--align-center {
+    text-align: left;
 }
