@@ -5,6 +5,9 @@
             <video autoplay loop class="intro__video">
                 <source src="http://playgroundinc.com/inca.mp4" type="video/mp4">
             </video>
+            <div class="intro__content">
+                {body}
+            </div>
         </section>
 
     {.or}
