@@ -10,6 +10,21 @@
     }
 }
 
+.button {
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    padding: 11px 38px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+}
+
 @font-face {
     font-family: 'Inca';
     font-weight: normal;
@@ -1235,18 +1250,7 @@ p > a:first-child {
 }
 
 .sqs-block-button .sqs-block-button-element {
-    display: inline-block;
-    border-width: 2px;
-    border-style: solid;
-    padding: 11px 38px;
-    line-height: 1.4;
-    letter-spacing: 0;
-    text-transform: none;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    background: none;
+    .button;
 }
 
 @media screen and (min-width: 768px) {
@@ -1377,6 +1381,17 @@ p > a:first-child {
     color: white;
 
     padding: 86px;
+}
+
+.form input {
+    background: none;
+    border: none;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+    padding: 0;
+}
+
+.form-wrapper input[type=submit] {
+    .button;
 }
 
 .form--contact {
