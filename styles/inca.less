@@ -1301,6 +1301,7 @@ p > a:first-child {
 
 .intro {
     position: relative;
+    min-width: 320px;
 }
 
 .intro__content {
@@ -1308,4 +1309,13 @@ p > a:first-child {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    width: 100%;
+    max-width: 430px;
+}
+
+@media screen and (min-width: 1214px) {
+    .intro__content {
+        max-width: 1214px;
+    }
 }
