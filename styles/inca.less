@@ -79,24 +79,28 @@ h1 {
     text-shadow: none;
 
     .clearfix;
-
-    .homepage & {
-        position: absolute;
-        bottom: 0;
-        top: auto;
-
-        .header-lock & {
-            position: fixed;
-            top: 0;
-            bottom: auto;
-        }
-    }
 }
 
 @media screen and (min-width: 768px) {
     .header {
         height: 100px;
         padding: 16px;
+    }
+}
+
+@media screen and (min-width: 1214px) {
+    .header {
+        .homepage & {
+            position: absolute;
+            bottom: 0;
+            top: auto;
+
+            .header-lock & {
+                position: fixed;
+                top: 0;
+                bottom: auto;
+            }
+        }
     }
 }
 
