@@ -1,5 +1,5 @@
       <!--Footer with open block field.-->
-      <footer id="footer" class="site-footer">
+      <footer id="footer" class="site-footer nection">
         <squarespace:block-field id="footerBlocks" columns="12" />
       </footer>
 
