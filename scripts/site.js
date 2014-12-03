@@ -37,6 +37,8 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             Author's custom code goes here.
             =============================== */
 
+        var $window = Y.one('window');
+
         var $html = Y.one('html');
         var $body = Y.one('body');
 
@@ -59,10 +61,17 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
         if ($body.hasClass('homepage')) {
             var $intro = Y.one('.intro');
             var $video = Y.one('.intro__video');
+            var $header = Y.one('.header');
+
+            var introHeight  = $intro.height();
+            var headerHeight = $header.height();
 
             function sizeVideo() {
                 var w = window.innerWidth;
                 var h = window.innerHeight;
+
+                introHeight = h;
+                headerHeight = $header.height();
 
                 var introStyles = {
                     width:  w,
@@ -93,9 +102,24 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
                 $video.setStyles(videoStyles);
 
                 $html.addClass('video-ready');
+
+                placeHeader();
             }
 
-            Y.one(window).on('resize', sizeVideo, this);
+
+            function placeHeader() {
+                var pos = window.scrollY;
+
+                if (pos > introHeight - headerHeight) {
+                    $html.addClass('header-lock');
+                } else {
+                    $html.removeClass('header-lock');
+                }
+            }
+
+            $window.on('resize', sizeVideo, this);
+            $window.on('scroll', placeHeader, this);
+
             sizeVideo();
         }
 

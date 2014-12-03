@@ -2,6 +2,25 @@
     {.equal? title "Intro"}
 
         <section class="intro nection nection--{title|slugify} {@|item-classes}">
+            <header class="header">
+                {.section website}
+                    <a class="header__logo logo logo--large" href="/">
+                        <img src="/assets/inca.svg" alt="{siteTitle}">
+                    </a>
+                    <a class="header__logo logo logo--small" href="/">
+                        <img src="/assets/inca-sm.svg" alt="{siteTitle}">
+                    </a>
+                    <div class="header__content">
+                        {.section siteTagLine}
+                            <p>{@}</p>
+                        {.end}
+                        <nav class="header-nav">
+                            <button type="button" class="menu__open">Menu</button>
+                        </nav>
+                    </div>
+                {.end}
+            </header>
+
             <video autoplay loop class="intro__video">
                 <source src="http://playgroundinc.com/inca2.mp4" type="video/mp4">
             </video>

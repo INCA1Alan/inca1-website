@@ -77,6 +77,18 @@ h1 {
     z-index: 1000;
     border-bottom: 1px #f1f1f1 solid;
     .clearfix;
+
+    .homepage & {
+        position: absolute;
+        bottom: 0;
+        top: auto;
+
+        .header-lock & {
+            position: fixed;
+            top: 0;
+            bottom: auto;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
