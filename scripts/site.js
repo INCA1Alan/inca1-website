@@ -53,10 +53,10 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
         var closeMenu = function() {
             $html.removeClass('show-menu');
         };
-
+/*
         $menuOpen.on('click', openMenu); 
         $menuClose.on('click', closeMenu);
-        $menuUnderlay.on('click', closeMenu);
+        $menuUnderlay.on('click', closeMenu); */
 
         if ($body.hasClass('homepage')) {
             var $intro = Y.one('.intro');
