@@ -1,6 +1,3 @@
-{.repeated section items}
-    {.equal? title "Intro"}
-
         <section class="intro nection nection--{title|slugify} {@|item-classes}">
             <header class="header">
                 {.section website}
@@ -25,10 +22,16 @@
                 <source src="http://playgroundinc.com/inca2.mp4" type="video/mp4">
             </video>
             <div class="intro__content">
-                {body}
+                {.repeated section items}
+                    {.equal? title "Intro"}
+                        {body}
+                    {.end}
+                {.end}
             </div>
         </section>
 
+{.repeated section items}
+    {.equal? title "Intro"}
     {.or}
 
         <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
