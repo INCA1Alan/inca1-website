@@ -1,15 +1,6 @@
       <!--Footer with open block field.-->
-      <footer id="footer" class="footer">
-        <aside class="form form--newsletter">
-            <div class="form__layout">
-                <squarespace:block-field id="newsletterForm" columns="12" />
-            </div>
-        </aside>
-        <aside class="form form--contact">
-            <div class="form__layout">
-                <squarespace:block-field id="contactForm" columns="12" />
-            </div>
-        </aside>
+      <footer id="footer" class="site-footer">
+        <squarespace:block-field id="footer-blocks" columns="12" />
       </footer>
 
     </div><!-- .body -->
