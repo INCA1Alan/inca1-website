@@ -1544,7 +1544,6 @@ p > a:first-child {
 }
 
 .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
-    max-width: 1200px;
     padding: 76px;
     box-sizing: border-box;
     background: none;
@@ -1558,6 +1557,12 @@ p > a:first-child {
     transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 1214px) {
+    .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+        max-width: 1200px;
+    }
+}
+
 .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description {
     text-align: center;
 }
@@ -1565,6 +1570,7 @@ p > a:first-child {
 .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description,
 .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p {
     font-size: 18px;
+    line-height: 1.2;
     font-weight: 700;
 }
 
@@ -1573,6 +1579,11 @@ p > a:first-child {
     .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p {
         font-size: 30px;
     }
+}
+
+.nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p em {
