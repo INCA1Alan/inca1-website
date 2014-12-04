@@ -1482,11 +1482,11 @@ p > a:first-child {
     }
 }
 
-.sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta {
+.nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta {
     height: 100% !important;
 }
 
-.sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+.nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
     max-width: 1200px;
     padding: 76px;
     box-sizing: border-box;
@@ -1501,20 +1501,37 @@ p > a:first-child {
     transform: translate(-50%, -50%);
 }
 
-.sqs-gallery-block-slideshow .meta .meta-description {
+.nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description {
     text-align: center;
 }
 
-.sqs-gallery-block-slideshow .meta .meta-description,
-.sqs-gallery-block-slideshow .meta .meta-description p {
-    font-size: 30px;
+.nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description,
+.nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p {
+    font-size: 18px;
     font-weight: 700;
 }
 
-.sqs-gallery-block-slideshow .meta .meta-description p em {
-    font-size: 14px;
+@media screen and (min-width: 768px) {
+    .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description,
+    .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p {
+        font-size: 30px;
+    }
+}
+
+.nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p em {
+    font-size: 10px;
     font-weight: 400;
     font-style: normal;
+
+    &:before {
+        content '—';
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p em {
+        font-size: 14px;
+    }
 }
 
 .nection--testimonials .sqs-gallery-block-slideshow .meta {
