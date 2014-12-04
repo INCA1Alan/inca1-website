@@ -1529,8 +1529,21 @@ p > a:first-child {
 }
 
 .nection--testimonials .sqs-gallery {
-    height: 500px !important;
     overflow: hidden;
+}
+
+/* there be dragons ahead */
+
+@media screen and (max-width: 767px) {
+    .nection--testimonials .sqs-gallery {
+        height: 500px !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1213px) {
+    .nection--testimonials .sqs-gallery {
+        height: 660x !important;
+    }
 }
 
 .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta {
@@ -1558,7 +1571,7 @@ p > a:first-child {
     transform: translate(-50%, -50%);
 }
 
-/* this next part is the worst, but we have to work around sqs's black box slider layout algo */
+/* this next part is the absolute worst, but we have to work around sqs's black box slider layout algo */
 @media screen and (min-width: 380px) {
     .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
         max-width: 360px;
@@ -1588,8 +1601,6 @@ p > a:first-child {
         padding: 76px;
     }
 }
-
-
 
 @media screen and (min-width: 1214px) {
     .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
