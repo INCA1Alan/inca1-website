@@ -1559,6 +1559,12 @@ p > a:first-child {
 }
 
 /* this next part is the worst, but we have to work around sqs's black box slider layout algo */
+@media screen and (min-width: 380px) {
+    .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+        max-width: 360px;
+    }
+}
+
 @media screen and (min-width: 450px) {
     .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
         max-width: 430px;
