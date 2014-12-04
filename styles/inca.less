@@ -1558,6 +1558,31 @@ p > a:first-child {
     transform: translate(-50%, -50%);
 }
 
+/* this next part is the worst, but we have to work around sqs's black box slider layout algo */
+@media screen and (min-width: 450px) {
+    .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+        max-width: 450px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+        max-width: 550px;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+        max-width: 650px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+        max-width: 768px;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
         padding: 76px;
