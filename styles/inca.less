@@ -1605,6 +1605,13 @@ p > a:first-child {
 
 .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description {
     text-align: center;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description {
+        letter-spacing: 2px;
+    }
 }
 
 .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description,
@@ -1630,6 +1637,7 @@ p > a:first-child {
     font-size: 10px;
     font-weight: 400;
     font-style: normal;
+    letter-spacing: 0;
 
     &:before {
         content: '—';
@@ -1639,6 +1647,7 @@ p > a:first-child {
 @media screen and (min-width: 768px) {
     .nection--testimonials .sqs-gallery-block-slideshow .meta .meta-description p em {
         font-size: 14px;
+        letter-spacing: 0;
     }
 }
 
