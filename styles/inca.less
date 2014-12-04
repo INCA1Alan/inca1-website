@@ -1177,6 +1177,10 @@ p > a:first-child {
     margin-bottom: 1.8em;
 }
 
+.tag-bg-none {
+    background: none !important;
+}
+
 .tag-bg-right {
     background-position: bottom right;
     background-size: 350px auto;
@@ -1299,6 +1303,20 @@ p > a:first-child {
 .large-button-style-solid .sqs-block-button .sqs-block-button-element--large:hover {
     opacity: 1;
     transition: none;
+}
+
+.tag-full-width {
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .tag-full-width {
+        padding: 0;
+    }
+} 
+
+.tag-full-width .sqs-layout {
+    max-width: none;
 }
 
 .homepage {
