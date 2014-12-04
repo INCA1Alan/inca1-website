@@ -1,6 +1,11 @@
       <!--Footer with open block field.-->
       <footer id="footer" class="site-footer nection">
-        <squarespace:block-field id="footerBlocks" columns="12" />
+        <section class="site-footer__contact">
+            <squarespace:block-field id="footerBlocks" columns="12" />
+        </section>
+        <section class="site-footer__meta">
+            <squarespace:block-field id="metaBlocks" columns="12" />
+        </section>
       </footer>
 
     </div><!-- .body -->
