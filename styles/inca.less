@@ -1544,7 +1544,8 @@ p > a:first-child {
 }
 
 .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
-    padding: 76px;
+    max-width: 320px;
+    padding: 38px;
     box-sizing: border-box;
     background: none;
 
@@ -1556,6 +1557,14 @@ p > a:first-child {
 
     transform: translate(-50%, -50%);
 }
+
+@media screen and (min-width: 768px) {
+    .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
+        padding: 76px;
+    }
+}
+
+
 
 @media screen and (min-width: 1214px) {
     .nection--testimonials .sqs-gallery-block-slideshow.sqs-gallery-block-show-meta .meta .meta-inside {
