@@ -73,6 +73,7 @@
                         </div>
                     </div>
                 </div>
+            {.alternates with}
                 <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
                     <div class="sqs-block-content">
                         <hr>
