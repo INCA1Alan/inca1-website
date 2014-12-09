@@ -121,6 +121,17 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             $window.on('scroll', placeHeader, this);
 
             sizeVideo();
+
+            Y.one('.intro__scroll').on('click', function() {
+                var anim = new Y.Anim({
+                    duration: 0.3,
+                    node: 'win',
+                    easing: 'easeBoth',
+                    to: {
+                        scroll: [0, introHeight]
+                    }
+                });
+            });
         }
 
     });
