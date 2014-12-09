@@ -64,4 +64,8 @@
                 
         {.end}
     </ul>
+
+    <section class="menu__meta">
+        <squarespace:block-field id="menuBlocks" columns="12" />
+    </section>
 </nav>
