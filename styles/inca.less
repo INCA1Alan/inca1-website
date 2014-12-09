@@ -476,7 +476,8 @@ p > a:first-child {
 
 @media screen and (max-width: 399px) {
     .section__table,
-    .section__table a {
+    .section__table a,
+    .tag-places .markdown-block a {
         font-size: 0;
     }
 }
@@ -491,14 +492,16 @@ p > a:first-child {
     }
 }
 
-.section__table ul {
+.section__table ul,
+.tag-places .markdown-block ul {
     list-style-type: none;
     text-align: left;
     border: 2px white solid;
     padding: 0;
 }
 
-.section__table li {
+.section__table li,
+.tag-places .markdown-block li {
     line-height: 58px;
     border-bottom: 2px white solid;
     margin-bottom: 0;
@@ -508,7 +511,8 @@ p > a:first-child {
     }
 }
 
-.section__table strong {
+.section__table strong,
+.tag-places .markdown-block strong {
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 3px;
@@ -517,13 +521,15 @@ p > a:first-child {
 }
 
 @media screen and (min-width: 768px) {
-    .section__table strong {
+    .section__table strong,
+    .tag-places .markdown-block strong {
         font-size: 30px;
         letter-spacing: 5px;
     }
 }
 
-.section__table em {
+.section__table em,
+.tag-places .markdown-block em {
     font-family: 'Inca';
     font-size: 51px;
     text-transform: none; 
@@ -534,12 +540,14 @@ p > a:first-child {
 }
 
 @media screen and (min-width: 768px) {
-    .section__table em {
+    .section__table em,
+    .tag-places .markdown-block em {
         top: -4px;
     }
 }
 
-.section__table a {
+.section__table a,
+.tag-places .markdown-block a {
     text-decoration: none;
 
     display: block;
@@ -550,7 +558,8 @@ p > a:first-child {
 }
 
 @media screen and (min-width: 768px) {
-    .section__table a {
+    .section__table a,
+    .tag-places .markdown-block a {
         font-size: 16px;
         line-height: 46px;
         height: 58px;
