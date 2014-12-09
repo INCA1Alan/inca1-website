@@ -124,7 +124,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
 
             Y.one('.intro__scroll').on('click', function() {
                 var anim = new Y.Anim({
-                    duration: 0.3,
+                    duration: 0.666,
                     node: 'win',
                     easing: 'easeBoth',
                     to: {
