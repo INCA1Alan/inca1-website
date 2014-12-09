@@ -1457,6 +1457,8 @@ p > a:first-child {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+    text-shadow: 0 0 1px rgba(0,0,0,.8);
+
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -1464,8 +1466,7 @@ p > a:first-child {
 
     position: absolute;
     left: 50%;
-    bottom: -50px;
-    margin-left: -12px;
+    bottom: 70px;
 
     &:after {
         transform: rotate(90deg);
@@ -1479,15 +1480,22 @@ p > a:first-child {
         display: inline-block;
         vertical-align: middle;
 
-        font-size: 24px;
-        line-height: 24px;
-        height: 24px;
-        width: 24px;
+        font-size: 32px;
+        line-height: 32px;
+        height: 32px;
+        width: 32px;
 
         position: absolute;
         left: 50%;
-        bottom: -50px;
-        margin-left: -12px;
+        bottom: -42px;
+        margin-left: -16px;
+    }
+}
+
+@media screen and (min-width: 1214px) {
+    .intro__scroll {
+        bottom: 180px;
+
     }
 }
 
