@@ -42,9 +42,9 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
         var $html = Y.one('html');
         var $body = Y.one('body');
 
-        var $menuOpen = Y.one('.menu__open');
-        var $menuClose = Y.one('.menu__close');
-        var $menuUnderlay = Y.one('.menu__underlay');
+        var $menuOpen = Y.one('.site-menu__open');
+        var $menuClose = Y.one('.site-menu__close');
+        var $menuUnderlay = Y.one('.site-menu__underlay');
 
         var openMenu = function() {
             $html.addClass('show-menu');
