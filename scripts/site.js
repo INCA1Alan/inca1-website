@@ -131,6 +131,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
                         scroll: [0, introHeight]
                     }
                 });
+                anim.run();
             });
         }
 
