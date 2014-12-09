@@ -128,7 +128,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
                     node: 'win',
                     easing: 'easeBoth',
                     to: {
-                        scroll: [0, introHeight]
+                        scroll: [0, introHeight - headerHeight]
                     }
                 });
                 anim.run();
