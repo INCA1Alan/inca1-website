@@ -30,6 +30,7 @@
             <div class="intro__content">
                 {body}
             </div>
+            <button class="intro__scroll">Scroll down</button>
         </section>
     {.end}
 {.end}

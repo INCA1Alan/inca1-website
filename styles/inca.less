@@ -1451,6 +1451,46 @@ p > a:first-child {
     }
 }
 
+.intro__scroll {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    margin-left: -12px;
+
+    &:after {
+        transform: rotate(90deg);
+        font-family: 'squarespace-ui-font';
+        font-style: normal;
+        speak: none;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        content: "\e02c";
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+
+        font-size: 24px;
+        line-height: 24px;
+        height: 24px;
+        width: 24px;
+
+        position: absolute;
+        left: 50%;
+        bottom: -50px;
+        margin-left: -12px;
+    }
+}
+
 .sqs-modal-lightbox-content .lightbox-background {
     background: white;
     opacity: 0.8;
