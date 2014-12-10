@@ -23,7 +23,7 @@
                         <p>{@}</p>
                     {.end}
                     <nav class="header-nav">
-                        <button type="button" class="menu__open">Menu</button>
+                        <button type="button" class="site-menu__open">Menu</button>
                     </nav>
                 </div>
             {.end}
