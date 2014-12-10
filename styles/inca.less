@@ -1077,11 +1077,12 @@ p > a:first-child {
 }
 
 .site-menu__bg {
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
+    max-width: 543px;
     height: 100%;
     z-index: 1001;
     background: #25639f;
@@ -1108,11 +1109,6 @@ p > a:first-child {
 
 .show-menu {
     overflow: hidden;
-}
-
-@media screen and (min-width: 543px) {
-    .site-menu {
-    }
 }
 
 @media screen and (min-width: 768px) {
