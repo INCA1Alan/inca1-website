@@ -30,7 +30,7 @@
             <div class="intro__content">
                 {body}
             </div>
-            <button class="intro__scroll">Scroll down</button>
+            <button class="intro__scroll">Start your discovery</button>
         </section>
     {.end}
 {.end}
