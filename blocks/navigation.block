@@ -1,4 +1,5 @@
 <div class="site-menu__underlay"></div>
+<div class="site-menu__bg"></div>
 <nav class="site-menu" data-content-field="navigation-mainNav">
     <div class="site-menu__content">
 

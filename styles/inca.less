@@ -1074,32 +1074,31 @@ p > a:first-child {
     max-height: 100%;
 
     display: none;
+}
 
-    &:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #25639f;
-    }
+.site-menu__bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #25639f;
 }
 
 .prepare-menu {
-    .site-menu {
+    .site-menu__bg {
         display: block;
     }
 
-    .site-menu:before {
+    .site-menu__bg {
         transform: translate3d(100%, 0, 0);
         transition: none;
     }
 }
 
 .show-menu {
-    .site-menu:before {
+    .site-menu__bg {
         transform: translate3d(0, 0, 0);
         transition: transform 0.25s ease-in;
     }
@@ -1107,6 +1106,11 @@ p > a:first-child {
 
 .show-menu {
     overflow: hidden;
+}
+
+@media screen and (min-width: 543px) {
+    .site-menu {
+    }
 }
 
 @media screen and (min-width: 768px) {
