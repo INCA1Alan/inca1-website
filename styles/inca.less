@@ -719,6 +719,7 @@ p > a:first-child {
     padding: 6px 4px 9px;
     width: 105px;
     overflow: hidden;
+    position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -772,6 +773,17 @@ p > a:first-child {
 .subnav__item--active {
     opacity: 0.5;
     transition: opacity 0.1s ease-in;
+}
+
+.subnav__item--active a {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #ccc;
 }
 
 .destination__content {
