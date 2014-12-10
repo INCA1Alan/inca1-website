@@ -50,7 +50,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             $html.addClass('prepare-menu');
             setTimeout(function() {
                 $html.addClass('show-menu');
-            }, 1);
+            }, 5);
         };
 
         var closeMenu = function() {
