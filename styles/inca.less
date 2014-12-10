@@ -1075,10 +1075,6 @@ p > a:first-child {
 
     display: none;
 
-    .show-menu & {
-        display: block;
-    }
-
     &:before {
         content: ' ';
         display: block;
@@ -1089,11 +1085,19 @@ p > a:first-child {
         height: 100%;
         background: #25639f;
         transform: translate3d(100%, 0, 0);
+    }
+}
 
-        .show-menu & {
-            transform: translate3d(0, 0, 0);
-            transition: transform 0.3s ease-in;
-        }
+.prepare-menu {
+    .site-menu {
+        display: block;
+    }
+}
+
+.show-menu {
+    .site-menu {
+        transform: translate3d(0, 0, 0);
+        transition: transform 0.3s ease-in;
     }
 }
 

@@ -47,11 +47,17 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
         var $menuUnderlay = Y.one('.site-menu__underlay');
 
         var openMenu = function() {
-            $html.addClass('show-menu');
+            $html.addClass('prepare-menu');
+            setTimeout(function() {
+                $html.addClass('show-menu');
+            }, 1);
         };
 
         var closeMenu = function() {
             $html.removeClass('show-menu');
+            setTimeout(function() {
+                $html.removeClass('prepare-menu');
+            }, 300);
         };
 
         $menuOpen.on('click', openMenu); 
