@@ -1530,13 +1530,22 @@ p > a:first-child {
     background: #25639f;
     color: white;
     max-width: 470px;
-    padding: 86px;
+    padding: 86px 36px 36px;
+}
+
+@media screen and (min-width: 768px) {
+    .sqs-modal-lightbox-content .lightbox-inner .lightbox-content {
+        padding: 86px;
+    }
 }
 
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content .form-wrapper .form-title {
     color: white;
     font-weight: 300;
     letter-spacing: 1px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: none;
 }
 
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content .lightbox-close {
