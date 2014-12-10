@@ -1,71 +1,73 @@
 <div class="site-menu__underlay"></div>
 <nav class="site-menu" data-content-field="navigation-mainNav">
+    <div class="site-menu__content">
 
-    <button class="site-menu__close" type="button">x</button>
+        <button class="site-menu__close" type="button">x</button>
 
-    <ul class="site-nav">
-        {.repeated section items}
+        <ul class="site-nav">
+            {.repeated section items}
 
-            <li class="site-nav__item{.section active}{.end}{.if folderActive}{.end}">
+                <li class="site-nav__item{.section active}{.end}{.if folderActive}{.end}">
 
-                {.folder?}
+                    {.folder?}
 
-                    <!--FOLDER-->
+                        <!--FOLDER-->
 
-                    <a href="{collection.fullUrl}">{collection.title}</a>
+                        <a href="{collection.fullUrl}">{collection.title}</a>
 
-                    <ul class="sub-nav">
+                        <ul class="sub-nav">
 
-                        {.repeated section items}
+                            {.repeated section items}
 
-                            <!--COLLECTION IN A FOLDER-->
+                                <!--COLLECTION IN A FOLDER-->
 
-                            {.collection?}
-                                <li class="sub-nav__item {.section active}{.end}">
-                                    <a href="{collection.fullUrl}">
-                                        {collection.title}
-                                    </a>
-                                </li>
+                                {.collection?}
+                                    <li class="sub-nav__item {.section active}{.end}">
+                                        <a href="{collection.fullUrl}">
+                                            {collection.title}
+                                        </a>
+                                    </li>
+                                {.end}
+
+                                <!--EXTERNAL LINK IN A FOLDER-->
+
+                                {.section externalLink}
+                                    <li class="sub-nav__item sub-nav__item--external">
+                                        <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                                            {title}
+                                        </a>
+                                    </li>
+                                {.end}
+
                             {.end}
 
-                            <!--EXTERNAL LINK IN A FOLDER-->
+                        </ul>
 
-                            {.section externalLink}
-                                <li class="sub-nav__item sub-nav__item--external">
-                                    <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                                        {title}
-                                    </a>
-                                </li>
-                            {.end}
+                    {.or}
 
+                        <!--COLLECTION-->
+
+                        {.section collection}
+                            <a href="{fullUrl}">{title}</a>
                         {.end}
 
-                    </ul>
+                        <!--EXTERNAL LINK-->
 
-                {.or}
+                        {.section externalLink}
+                            <a href="{url}"{.section newWindow} target="_blank"{.end}>
+                                {title}
+                            </a>
+                        {.end}
 
-                    <!--COLLECTION-->
-
-                    {.section collection}
-                        <a href="{fullUrl}">{title}</a>
                     {.end}
 
-                    <!--EXTERNAL LINK-->
+                </li>
+                    
+            {.end}
+        </ul>
 
-                    {.section externalLink}
-                        <a href="{url}"{.section newWindow} target="_blank"{.end}>
-                            {title}
-                        </a>
-                    {.end}
-
-                {.end}
-
-            </li>
-                
-        {.end}
-    </ul>
-
-    <section class="site-menu__meta">
-        <squarespace:block-field id="menuBlocks" columns="12" />
-    </section>
+        <section class="site-menu__meta">
+            <squarespace:block-field id="menuBlocks" columns="12" />
+        </section>
+    </div>
 </nav>

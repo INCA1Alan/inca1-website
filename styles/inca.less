@@ -1101,7 +1101,7 @@ p > a:first-child {
 .show-menu {
     .site-menu:before {
         transform: translate3d(0, 0, 0);
-        transition: transform 0.3s ease-in;
+        transition: transform 0.25s ease-in;
     }
 }
 
@@ -1125,10 +1125,32 @@ p > a:first-child {
     z-index: 1001;
 
     display: none;
+}
 
-    .show-menu & {
-        display: block;
-    }
+.prepare-menu .site-menu__underlay {
+    display: block;
+    opacity: 0;
+    transition: none;
+}
+
+.show-menu .site-menu__underlay {
+    opacity: 1;
+    transition: opacity 0.15s ease-in;
+}
+
+.site-menu__content {
+    display: none;
+}
+
+.prepare-menu .site-menu__content {
+    display: block;
+    opacity: 0;
+    transition: none;
+}
+
+.show-menu .site-menu__content {
+    opacity: 1;
+    transition: opacity 0.1s ease-in 0.15s;
 }
 
 .site-menu a {
