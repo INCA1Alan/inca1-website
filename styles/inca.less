@@ -1180,20 +1180,12 @@ p > a:first-child {
     font-size: 14px;
 
     padding: 20px;
-
-    &:first-child {
-        padding-top: 62px;
-    }
 }
 
 @media screen and (min-width: 768px) {
     .nection {
         font-size: 20px;
         padding: 60px 20px;
-
-        &:first-child {
-            padding-top: 100px;
-        }
     }
 }
 
@@ -1202,8 +1194,12 @@ p > a:first-child {
         min-height: 610px;
 
         &:first-child {
-            padding-top: 160px;
+            padding-top: 60px 20px;
         }
+    }
+
+    .intro + .nection {
+        padding-top: 140px;
     }
 }
 
