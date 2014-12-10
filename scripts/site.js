@@ -57,7 +57,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             $html.removeClass('show-menu');
             setTimeout(function() {
                 $html.removeClass('prepare-menu');
-            }, 30);
+            }, 366);
         };
 
         $menuOpen.on('click', openMenu); 
