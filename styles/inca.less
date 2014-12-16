@@ -1901,3 +1901,36 @@ p > a:first-child {
 .destination__content h2.blog-article__meta {
     margin-bottom: 1.5em;
 }
+
+.pagination {
+    text-align: center;
+}
+
+.pagination__link {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.pagination__link--newer:before,
+.pagination__link--older:after {
+    font-family: 'squarespace-ui-font';
+    font-style: normal;
+    speak: none;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 20px;
+    height: 20px;
+}
+
+.pagination__link--newer {
+    content: "\e02c";
+    margin-right: 0.5em;
+}
+
+.pagination__link--older {
+    content: "\e02d";
+    margin-left: 0.5em;
+}

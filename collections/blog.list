@@ -100,24 +100,25 @@
 <!--PAGINATION-->
   
 {.if pagination}
-  <nav>
+<nav>
 
     <!--NEWER PAGE-->
 
     {.if pagination.prevPage}
-      <a href="{pagination.prevPageUrl}">Newer</a>
+        <a class="pagination__link pagination__link--newer" href="{pagination.prevPageUrl}">Newer</a>
     {.or}
-      <a class="disabled">Newer</a>
+        <a class="pagination__link pagination__link--newer disabled">Newer</a>
     {.end}
 
     <!--OLDER PAGE-->
 
     {.if pagination.nextPage}
-      <a href="{pagination.nextPageUrl}">Older</a>
+        <a class="pagination__link pagination__link--older" href="{pagination.nextPageUrl}">Older</a>
     {.or}
-      <a class="disabled">Older</a>
+        <a class="pagination__link pagination__link--older disabled">Older</a>
     {.end}
 
-  </nav>
+</nav>
 {.end}
+
 </div>

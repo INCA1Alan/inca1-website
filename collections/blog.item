@@ -59,23 +59,23 @@
 <!--PAGINATION-->
   
 {.section pagination}
-  <nav>
+<nav class="pagination">
 
     <!--NEWER PAGE-->
 
     {.section prevItem}
-      <a href="{fullUrl}">Newer</a>
+        <a class="pagination__link pagination__link--newer" href="{fullUrl}">Newer</a>
     {.or}
-      <a class="disabled">Newer</a>
+        <a class="pagination__link pagination__link--newer disabled">Newer</a>
     {.end}
-    
+
     <!--OLDER PAGE-->
 
     {.section nextItem}
-      <a href="{fullUrl}">Older</a>
+        <a class="pagination__link pagination__link--older" href="{fullUrl}">Older</a>
     {.or}
-      <a class="disabled">Older</a>
+        <a class="pagination__link pagination__link--older disabled">Older</a>
     {.end}
 
-  </nav>
+</nav>
 {.end}
