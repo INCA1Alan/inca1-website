@@ -54,12 +54,18 @@
 
                                 <!--POST TILE-->
 
-                                <h1 class="title" data-content-field="title">
+                                <h1 class="title blog-title" data-content-field="title">
                                     <a href="{fullUrl}">{title}</a>
                                 </h1>
 
-                                <h2 class="date">
-                                    <time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time>
+                                <h2 class="date blog-date">
+                                    <time datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time>
+                                    {.categories?}
+                                        in
+                                        {.repeated section categories}
+                                            <a href="?category={@|url-encode}">{@}</a>{.alternates with},
+                                        {.end}
+                                    {.end}
                                 </h2>
 
                                 <!--EXCERPT OR BODY-->
