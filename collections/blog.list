@@ -58,6 +58,10 @@
                                     <a href="{fullUrl}">{title}</a>
                                 </h1>
 
+                                <h2 class="date">
+                                    <time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time>
+                                </h2>
+
                                 <!--EXCERPT OR BODY-->
 
                                 {.if excerpt}
