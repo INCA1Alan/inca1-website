@@ -17,7 +17,7 @@
   <p>Filtering by Author: {author.displayName}</p>
 {.end}
 
-<div class="sqs-layout sqs-grid-12 columns-12"">
+<div class="sqs-layout sqs-grid-12 columns-12 blog-index">
     <div class="row sqs-row">
         <div class="col sqs-col-12 span-12">
 
@@ -54,11 +54,11 @@
 
                                 <!--POST TILE-->
 
-                                <h1 class="title blog-title" data-content-field="title">
+                                <h1 class="blog-index__title" data-content-field="title">
                                     <a href="{fullUrl}">{title}</a>
                                 </h1>
 
-                                <h2 class="date blog-date">
+                                <h2 class="blog-index__meta">
                                     <time datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time>
                                     {.categories?}
                                         in
