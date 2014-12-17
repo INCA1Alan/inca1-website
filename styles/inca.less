@@ -1503,6 +1503,10 @@ p > a:first-child {
     .form-block .lightbox-handle {
         color: #25639f;
         border-color: #25639f;
+
+        &:hover {
+            background-color: rgba(37, 110, 159, 0.1);
+        }
     }
 }
 
@@ -1514,30 +1518,17 @@ p > a:first-child {
         border-color: #ffffff;
 
         &:hover {
-            background: yellow !important;
+            background: rgba(255, 255, 255, 0.1);
         }
-    }
-
-    .small-button-style-solid .sqs-block-button .sqs-block-button-element--small,
-    .medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium,
-    .large-button-style-solid .sqs-block-button .sqs-block-button-element--large {
-        background: blue !important;
     }
 }
 
 .small-button-style-solid .sqs-block-button .sqs-block-button-element--small,
 .medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium,
 .large-button-style-solid .sqs-block-button .sqs-block-button-element--large {
-
     &:hover {
         opacity: 1;
         transition: none;
-        background-color: rgba(37, 110, 159, 0.1);
-    }
-
-    .tag-light & {
-        background-color: rgba(255, 255, 255, 0.1);
-        background-color: red !important;
     }
 }
 
