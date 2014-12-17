@@ -1515,16 +1515,19 @@ p > a:first-child {
     }
 }
 
-.small-button-style-solid .sqs-block-button .sqs-block-button-element--small:hover,
-.medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium:hover,
-.large-button-style-solid .sqs-block-button .sqs-block-button-element--large:hover {
-    opacity: 1;
-    transition: none;
-    background: rgba(37, 110, 159, 0.1);
+.small-button-style-solid .sqs-block-button .sqs-block-button-element--small,
+.medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium,
+.large-button-style-solid .sqs-block-button .sqs-block-button-element--large {
 
-    .tag-light & {
-        background: rgba(255, 255, 255, 0.1);
-        background: red !important;
+    &:hover {
+        opacity: 1;
+        transition: none;
+        background: rgba(37, 110, 159, 0.1);
+
+        .tag-light & {
+            background: rgba(255, 255, 255, 0.1);
+            background: red !important;
+        }
     }
 }
 
