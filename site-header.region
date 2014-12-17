@@ -24,8 +24,8 @@
                     {.end}
                     <nav class="header-nav">
                         <ul>
-                            <li class="header-nav__item">
-                                <a href="http://inca-clients.squarespace.com" class="login">Login</a>
+                            <li class="header-nav__item header-nav__item--login">
+                                <a href="http://inca-clients.squarespace.com">Login</a>
                             </li>
                             <li class="header-nav__item">
                                 <button type="button" class="site-menu__open">Menu</button>
