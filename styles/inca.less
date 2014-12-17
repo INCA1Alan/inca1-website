@@ -1513,6 +1513,12 @@ p > a:first-child {
         color: #ffffff;
         border-color: #ffffff;
     }
+
+    .small-button-style-solid .sqs-block-button .sqs-block-button-element--small,
+    .medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium,
+    .large-button-style-solid .sqs-block-button .sqs-block-button-element--large {
+        background: blue !important;
+    }
 }
 
 .small-button-style-solid .sqs-block-button .sqs-block-button-element--small,
@@ -1522,12 +1528,12 @@ p > a:first-child {
     &:hover {
         opacity: 1;
         transition: none;
-        background: rgba(37, 110, 159, 0.1);
+        background-color: rgba(37, 110, 159, 0.1);
     }
 
     .tag-light & {
-        background: rgba(255, 255, 255, 0.1);
-        background: red !important;
+        background-color: rgba(255, 255, 255, 0.1);
+        background-color: red !important;
     }
 }
 
