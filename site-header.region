@@ -23,7 +23,14 @@
                         <p>{@}</p>
                     {.end}
                     <nav class="header-nav">
-                        <button type="button" class="site-menu__open">Menu</button>
+                        <ul>
+                            <li class="header-nav__item">
+                                <a href="http://inca-clients.squarespace.com" class="login">Login</a>
+                            </li>
+                            <li class="header-nav__item">
+                                <button type="button" class="site-menu__open">Menu</button>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             {.end}
