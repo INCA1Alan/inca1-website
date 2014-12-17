@@ -204,12 +204,18 @@ h1 {
 }
 
 .header-nav__item--login {
-    display: none;
+    &,
+    .header__content & {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 830px) {
     .header-nav__item--login {
-        display: inline-block;
+        &,
+        .header__content & {
+            display: inline-block;
+        }
     }
 }
 
