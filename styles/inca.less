@@ -1970,7 +1970,22 @@ p > a:first-child {
 
 .blog,
 .blog-article {
-    margin-top: 64px;
+    margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .blog,
+    .blog-article {
+        margin-top: 64px;
+    }
+}
+
+.blog-article article {
+    padding: 0 17px;
+}
+
+.blog-article .sqs-block[class*=float-right] {
+    margin-left: 0;
 }
 
 .blog-index__title,
@@ -2012,6 +2027,10 @@ p > a:first-child {
     margin: 0 20px;
     text-decoration: none;
     font-weight: 300;
+
+    &.disabled {
+        color: #999;
+    }
 }
 
 .pagination__link--newer:before,
