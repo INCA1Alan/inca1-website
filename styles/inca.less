@@ -186,6 +186,7 @@ h1 {
             position: absolute;
             left: 0;
             top: 50%;
+            -webkit-transform: translate(0, -50%);
             transform: translate(0, -50%);
             background: #ccc;
         }
@@ -230,6 +231,7 @@ h1 {
         position: absolute;
         left: 18px;
         top: 50%;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         margin-top: -10px;
     }
@@ -662,6 +664,7 @@ p > a:first-child {
     position: absolute;
     top: 50%;
     left: 0;
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
     margin-top: 28px;
@@ -968,6 +971,7 @@ p > a:first-child {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;
 }
@@ -1146,6 +1150,7 @@ p > a:first-child {
     z-index: 1001;
     background: #25639f;
 
+    -webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);
 }
 
@@ -1156,6 +1161,7 @@ p > a:first-child {
     }
 
     .site-menu__bg {
+        -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
         transition: transform 0.125s ease-out 0.05s;
     }
@@ -1163,6 +1169,7 @@ p > a:first-child {
 
 .show-menu {
     .site-menu__bg {
+        -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         transition: transform 0.25s ease-in 0s;
     }
@@ -1291,6 +1298,7 @@ p > a:first-child {
         position: absolute;
         right: 0;
         top: 50%;
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         line-height: 51px;
         margin-top: -12px;
@@ -1300,9 +1308,11 @@ p > a:first-child {
 .site-menu__open,
 .site-menu__close {
     outline: none;
+    -webkit-transform: translateY(0);
     transform: translateY(0);
 
     &:active {
+        -webkit-transform: translateY(1px);
         transform: translateY(1px);
     }
 }
@@ -1601,6 +1611,7 @@ p > a:first-child {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 
     width: 100%;
@@ -1642,6 +1653,7 @@ p > a:first-child {
     position: absolute;
     bottom: 8px;
     left: 50%;
+    -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     z-index: 2;
 
@@ -1810,6 +1822,7 @@ p > a:first-child {
     top: 50%;
     left: 50%;
 
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
