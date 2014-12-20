@@ -114,7 +114,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
 
 
             function placeHeader() {
-                var pos = window.scrollY;
+                var pos = window.pageYOffset;
 
                 if (pos > introHeight - headerHeight) {
                     $html.addClass('header-lock');
