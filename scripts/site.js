@@ -73,7 +73,7 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             var headerHeight = $header.height();
 
             function sizeVideo() {
-                var w = window.innerWidth;
+                var w = document.body.clientWidth; // window.innerWidth;
                 var h = window.innerHeight;
 
                 introHeight = h;
