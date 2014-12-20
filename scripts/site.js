@@ -127,6 +127,9 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             $window.on('scroll', placeHeader, this);
 
             sizeVideo();
+            setTimeout(function() {
+                sizeVideo();
+            }, 500);
 
             Y.one('.intro__scroll').on('click', function() {
                 var anim = new Y.Anim({
