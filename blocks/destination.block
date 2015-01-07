@@ -2,7 +2,7 @@
   <ul>
     {.repeated section items}
     <li class="subnav__item {.section active} subnav__item--active{.end}">
-    {@}
+    {@|html}
 
       {.section collection}
         <a href="{fullUrl}">
