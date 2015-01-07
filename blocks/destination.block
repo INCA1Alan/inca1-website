@@ -6,7 +6,7 @@
       {.section collection}
         <a href="{fullUrl}">
             <i>{navigationTitle}</i>
-            <span>{title} {.equals? regionName "default"}**{.end}</span>
+            <span>{title} {.equals? regionName "default"}**{.end}{regionName}</span>
         </a>
       {.end}
 
