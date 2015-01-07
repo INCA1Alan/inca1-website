@@ -2,11 +2,12 @@
   <ul>
     {.repeated section items}
     <li class="subnav__item {.section active} subnav__item--active{.end}">
+    {regionName}
 
       {.section collection}
         <a href="{fullUrl}">
             <i>{navigationTitle}</i>
-            <span>{title}</span>
+            <span>{title} {regionName}</span>
         </a>
       {.end}
 
