@@ -5,8 +5,8 @@
 
       {.section collection}
         <a href="{fullUrl}">
-            <i>{navigationTitle}</i>
-            <span>{title}</span>
+            <i>{.equal? regionName "default"}a{.or}{.equal? regionName "iconBinoculars"}b{.or}{.equal? regionName "iconCloud"}c{.or}{.equal? regionName "iconCamera"}d{.or}{.equal? regionName "iconMoon"}e{.or}{.equal? regionName "iconAnchor"}f{.or}{.equal? regionName "iconCalendar"}i{.or}{.equal? regionName "iconSuitcase"}h{.end}{.end}{.end}{.end}{.end}{.end}{.end}{.end}</i>
+            <span>{navigationTitle}</span>
         </a>
       {.end}
 
