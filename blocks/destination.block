@@ -5,7 +5,7 @@
 
       {.section collection}
         <a href="{fullUrl}">
-            <i>{.equal? regionName "default"}a{.or}{.equal? regionName "iconBinoculars"}b{.or}{.equal? regionName "iconCloud"}c{.or}{.equal? regionName "iconCamera"}d{.or}{.equal? regionName "iconMoon"}e{.or}{.equal? regionName "iconAnchor"}f{.or}{.equal? regionName "iconCalendar"}i{.or}{.equal? regionName "iconSuitcase"}h{.end}{.end}{.end}{.end}{.end}{.end}{.end}{.end}</i>
+            <i>{.equal? regionName "default"}a{.or}{.equal? regionName "pageOverview"}b{.or}{.equal? regionName "pageDayByDay"}c{.or}{.equal? regionName "pageGallery"}d{.or}{.equal? regionName "pageHotels"}e{.or}{.equal? regionName "pageYachts"}f{.or}{.equal? regionName "pageDatesPrices"}i{.or}{.equal? regionName "pageMoreInfo"}h{.end}{.end}{.end}{.end}{.end}{.end}{.end}{.end}</i>
             <span>{navigationTitle}</span>
         </a>
       {.end}
