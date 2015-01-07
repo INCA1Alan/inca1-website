@@ -6,7 +6,7 @@
       {.section collection}
         <a href="{fullUrl}">
             <i>{navigationTitle}</i>
-            <span>{title} {.equal? regionName "nobutton"}**{.end}{regionName}</span>
+            <span>{title}</span>
         </a>
       {.end}
 
