@@ -695,11 +695,20 @@ p > a:first-child {
     }
 }
 
-.destination__meta p {
+.destination__meta p:first-child {
+    display: none;
+}
+
+.destination__meta p,
+.destination__meta p * {
     margin: 10px auto;
 }
 
-.destination__meta p:last-child {
+.destination__meta p * {
+    display: block;
+}
+
+.destination__meta p *:last-child {
     line-height: 1;
 }
 
