@@ -160,15 +160,18 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
             Y.Cookie.remove("lasttrip");
         };
 
-        Y.one('.back-button').on('click', function() {
-            var lastTrip = Y.Cookie.get("lasttrip");
-            if (lastTrip) {
-                window.location.href = lastTrip;
-            } else {
-                // oops
-                console.log('oops');
-            }
-        });
+        var $backButton = Y.one('.back-button');
+        if ($backButton) {
+            $backButton.on('click', function() {
+                var lastTrip = Y.Cookie.get("lasttrip");
+                if (lastTrip) {
+                    window.location.href = lastTrip;
+                } else {
+                    // oops
+                    console.log('oops');
+                }
+            });
+        }
     });
 });
 
