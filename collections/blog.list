@@ -54,11 +54,11 @@
 
                                 <!--POST TILE-->
 
-                                <h1 class="blog-index__title" data-content-field="title">
+                                <h2 class="blog-index__title" data-content-field="title">
                                     <a href="{fullUrl}">{title}</a>
-                                </h1>
+                                </h2>
 
-                                <h2 class="blog-index__meta">
+                                <h3 class="blog-index__meta">
                                     <time datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time>
                                     {.categories?}
                                         in
@@ -66,7 +66,7 @@
                                             <a href="?category={@|url-encode}">{@}</a>{.alternates with},
                                         {.end}
                                     {.end}
-                                </h2>
+                                </h3>
 
                                 <!--EXCERPT OR BODY-->
 

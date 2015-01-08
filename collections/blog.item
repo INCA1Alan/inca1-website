@@ -17,15 +17,15 @@
 
                 <!--POST TILE-->
 
-                <h1 class="blog-article__title" data-content-field="title">
+                <h2 class="blog-article__title" data-content-field="title">
                     {.passthrough?}
                         <a href="{sourceUrl}" target="_blank">{title}</a>
                     {.or}
                         <a href="{fullUrl}">{title}</a>
                     {.end}
-                </h1>
+                </h2>
 
-                <h2 class="blog-article__meta">
+                <h3 class="blog-article__meta">
                     <time datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time>
                     {.categories?}
                     in
@@ -33,7 +33,7 @@
                             <a href="{collection.fullUrl}?category={@|url-encode}">{@}</a>{.alternates with},
                         {.end}
                     {.end}
-                </h2>
+                </h3>
 
                 <!--MAIN CONTENT-->
 
