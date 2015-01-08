@@ -2058,3 +2058,36 @@ p > a:first-child {
     content: "\e02d";
     margin-left: 0.5em;
 }
+
+.back-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    color: white;
+    background: none;
+    border: none;
+    padding: 12px 16px;
+
+    &:before {
+        font-family: 'squarespace-ui-font';
+        font-style: normal;
+        speak: none;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        vertical-align: middle;
+
+        font-size: 17px;
+        position: relative;
+        top: -2px;
+        content: "\e02c";
+        margin-right: 0.5em;
+    }
+
+    display: none;
+
+    .has-back-button & {
+        display: block;
+    }
+}

@@ -9,7 +9,7 @@
     http://www.jsrosettastone.com/
 */
 
-YUI().use('node', 'event', 'squarespace-util', function (Y) {
+YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
     Y.on('domready', function () {
 
         /*
@@ -144,6 +144,31 @@ YUI().use('node', 'event', 'squarespace-util', function (Y) {
             });
         }
 
+        if (typeof(PAGE_TYPE) != "undefined") {
+            if (PAGE_TYPE == "trip") {
+                Y.Cookie.set("lasttrip", window.location.href, { path: "/" });
+            } else if (PAGE_TYPE == "extra" && Y.Cookie.get("lasttrip")) {
+                $html.addClass('has-back-button');
+            } else {
+                clearTripCookie();
+            }
+        } else {
+            clearTripCookie();
+        }
+
+        var clearTripCookie = function() {
+            Y.Cookie.remove("lasttrip");
+        };
+
+        Y.one('.back-button').on('click', function() {
+            var lastTrip = Y.Cookie.get("lasttrip");
+            if (lastTrip) {
+                window.location.href = lastTrip;
+            } else {
+                // oops
+                console.log('oops');
+            }
+        });
     });
 });
 
