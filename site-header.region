@@ -25,7 +25,7 @@
                     <nav class="header-nav">
                         <ul>
                             <li class="header-nav__item header-nav__item--login">
-                                <a href="http://inca-clients.squarespace.com">Login</a>
+                                <a href="http://inca-clients.squarespace.com">Guest Login</a>
                             </li>
                             <li class="header-nav__item">
                                 <button type="button" class="site-menu__open">Menu</button>
