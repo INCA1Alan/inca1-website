@@ -1526,6 +1526,15 @@ p > a:first-child {
     }
 }
 
+.small-button-style-solid .sqs-block-button .sqs-block-button-element--small,
+.medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium,
+.large-button-style-solid .sqs-block-button .sqs-block-button-element--large {
+    &:hover {
+        opacity: 1;
+        transition: none;
+    }
+}
+
 /* default section style: dark text on light background */
 .content,
 .nection,
@@ -1538,6 +1547,7 @@ p > a:first-child {
 
         &:hover {
             background-color: rgba(37, 110, 159, 0.1);
+            transition: background-color 0.1s ease-out;
         }
     }
 }
@@ -1552,16 +1562,8 @@ p > a:first-child {
 
         &:hover {
             background: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.1s ease-out;
         }
-    }
-}
-
-.small-button-style-solid .sqs-block-button .sqs-block-button-element--small,
-.medium-button-style-solid .sqs-block-button .sqs-block-button-element--medium,
-.large-button-style-solid .sqs-block-button .sqs-block-button-element--large {
-    &:hover {
-        opacity: 1;
-        transition: none;
     }
 }
 
