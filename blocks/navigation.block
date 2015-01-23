@@ -14,7 +14,7 @@
 
                         <!--FOLDER-->
 
-                        <a>{collection.title}</a>
+                        <span>{collection.title}</span>
 
                         <ul class="sub-nav">
 
