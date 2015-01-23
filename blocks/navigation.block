@@ -14,7 +14,7 @@
 
                         <!--FOLDER-->
 
-                        <a href="{collection.fullUrl}">{collection.title}</a>
+                        <a>{collection.title}</a>
 
                         <ul class="sub-nav">
 
