@@ -1604,6 +1604,7 @@ p > a:first-child {
 .intro {
     position: relative;
     min-width: 320px;
+    min-height: 320px;
     text-shadow: 0 0 1px rgba(0,0,0,0.8);
 }
 
@@ -1676,7 +1677,7 @@ p > a:first-child {
 
     position: absolute;
     left: 50%;
-    bottom: 70px;
+    bottom: 10px;
 
     &:after {
         font-family: 'Inca';
@@ -1698,6 +1699,12 @@ p > a:first-child {
         left: 50%;
         bottom: 0;
         margin-left: -32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .intro__scroll {
+        bottom: 70px;
     }
 }
 
