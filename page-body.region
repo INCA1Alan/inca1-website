@@ -16,5 +16,8 @@
             <h1 class="destination__title">{title}</h1>
         {.end}
         {squarespace.main-content}
+        <p class="back-to-top">
+            <a href="#">Back to top</a>
+        </p>
     </main>
 </article>

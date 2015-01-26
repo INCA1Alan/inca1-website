@@ -172,6 +172,21 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
                 }
             });
         }
+
+        var $backToTop = Y.one('.back-to-top a');
+        if ($backToTop) {
+            $backToTop.on('click', function() {
+                var anim = new Y.Anim({
+                    duration: 0.666,
+                    node: 'win',
+                    easing: 'easeBoth',
+                    to: {
+                        scroll: [0, 0]
+                    }
+                });
+                anim.run();
+            });
+        }
     });
 });
 
