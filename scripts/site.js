@@ -104,7 +104,7 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
 
                 }
 
-                $intro.setStyles(introStyles);
+                //$intro.setStyles(introStyles);
                 $video.setStyles(videoStyles);
 
                 $html.addClass('video-ready');
