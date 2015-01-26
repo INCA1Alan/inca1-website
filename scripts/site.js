@@ -66,7 +66,7 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
 
         if ($body.hasClass('homepage')) {
             var $intro = Y.one('.intro');
-            var $video = Y.one('.intro__video');
+            var $video = Y.all('.intro__video');
             var $header = Y.one('.header');
 
             var introHeight  = $intro.height();
