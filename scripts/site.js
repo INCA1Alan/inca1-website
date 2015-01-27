@@ -165,6 +165,7 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
         }
 
         var clearTripCookie = function() {
+            console.log('clearTripCookie');
             Y.Cookie.set("lasttrip", null, { path: "/" });
         };
 
