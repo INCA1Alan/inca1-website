@@ -2145,11 +2145,14 @@ p > a:first-child {
     }
 
     display: none;
+    opacity: 0;
 }
 
 .back-button {
     .has-back-button & {
         display: block;
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
     }
 
     .has-destination-button & {
@@ -2160,6 +2163,8 @@ p > a:first-child {
 .destination-button {
     .has-destination-button & {
         display: block;
+        opacity: 1;
+        transition: opacity 0.1s ease-in;
     }
 }
 
