@@ -8,6 +8,7 @@
                 {description}
             </div>
             <button class="back-button">Return to trip</button>
+            <a href="#" class="destination-button"></a>
         </header>
     {.end}
     <squarespace:folder-navigation template="destination" />

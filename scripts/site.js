@@ -152,11 +152,12 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
             if (PAGE_TYPE == "trip") {
                 Y.Cookie.set("lasttrip", window.location.href, { path: "/" });
 
-                if (typeof(DESTINATION) != "undefined") {
+                if (typeof(DESTINATION_URL) != "undefined" && typeof(DESTINATION_NAME) != "undefined") {
                     var $destinationButton = Y.one('.destination-button');
                     if ($destinationButton) {
-                        $destinationButton.set('href', DESTINATION);
-                        $html.addClass('has-trip-button');
+                        $destinationButton.set('href', DESTINATION_URL);
+                        $destinationButton.set('text', 'More '+DESTINATION_NAME+' trips');
+                        $html.addClass('has-destination-button');
                     }
                 }
             } else if (PAGE_TYPE == "extra" && Y.Cookie.get("lasttrip")) {

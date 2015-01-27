@@ -2116,7 +2116,8 @@ p > a:first-child {
     margin-left: 0.5em;
 }
 
-.back-button {
+.back-button,
+.destination-button {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -2143,8 +2144,20 @@ p > a:first-child {
     }
 
     display: none;
+}
 
+.back-button {
     .has-back-button & {
+        display: block;
+    }
+
+    .has-destination-button & {
+        display: none;
+    }
+}
+
+.destination-button {
+    .has-destination-button & {
         display: block;
     }
 }
