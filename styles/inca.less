@@ -1078,7 +1078,18 @@ p > a:first-child {
     }
 
     p:last-child:after {
-        content: ' »';
+        font-family: 'squarespace-ui-font';
+        font-style: normal;
+        speak: none;
+        font-weight: normal;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 17px;
+        position: relative;
+        top: -2px;
+        content: "\e02d";
+        margin-left: .5em;
     }
 }
 
