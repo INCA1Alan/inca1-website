@@ -78,4 +78,11 @@
     {.end}
 
 </nav>
+
+<nav class="pagination-large">
+    <div class="sqs-gallery-controls show-hover-effect">
+      <a href="#" class="previous" id="yui_3_17_2_1_1422399892329_852"></a>
+      <a href="#" class="next"></a>
+    </div>
+</nav>
 {.end}

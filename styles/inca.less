@@ -2137,6 +2137,20 @@ p > a:first-child {
     margin-left: 0.5em;
 }
 
+.pagination-large {
+    display: none;
+}
+
+@media screen and (min-width: 1214px) {
+    .pagination {
+        display: none;
+    }
+
+    .pagination-large {
+        display: block;
+    }
+}
+
 .back-button,
 .destination-button {
     position: absolute;
