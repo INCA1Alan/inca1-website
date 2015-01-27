@@ -146,6 +146,11 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
 
         console.log('pre');
 
+        var clearTripCookie = function() {
+            console.log('clearTripCookie');
+            Y.Cookie.set("lasttrip", null, { path: "/" });
+        };
+
         if (typeof(PAGE_TYPE) != "undefined") {
             console.log('PAGE_TYPE != undefined');
 
@@ -172,11 +177,6 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
             console.log('PAGE_TYPE is undefined');
             clearTripCookie();
         }
-
-        var clearTripCookie = function() {
-            console.log('clearTripCookie');
-            Y.Cookie.set("lasttrip", null, { path: "/" });
-        };
 
         var $backButton = Y.one('.back-button');
         if ($backButton) {
