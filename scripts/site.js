@@ -144,19 +144,12 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
             });
         }
 
-        console.log('pre');
-
         var clearTripCookie = function() {
-            console.log('clearTripCookie');
             Y.Cookie.remove("lasttrip", { path: "/" });
         };
 
         if (typeof(PAGE_TYPE) != "undefined") {
-            console.log('PAGE_TYPE != undefined');
-
             if (PAGE_TYPE == "trip") {
-                console.log('PAGE_TYPE == trip');
-
                 Y.Cookie.set("lasttrip", window.location.href, { path: "/" });
 
                 if (typeof(DESTINATION) != "undefined") {
@@ -167,14 +160,11 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
                     }
                 }
             } else if (PAGE_TYPE == "extra" && Y.Cookie.get("lasttrip")) {
-                console.log('PAGE_TYPE == extra && cookie');
                 $html.addClass('has-back-button');
             } else {
-                console.log('PAGE_TYPE is not trip or (extra && cookie)');
                 clearTripCookie();
             }
         } else {
-            console.log('PAGE_TYPE is undefined');
             clearTripCookie();
         }
 
