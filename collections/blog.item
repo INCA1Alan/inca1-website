@@ -81,8 +81,12 @@
 
 <nav class="pagination-large">
     <div class="sqs-gallery-controls show-hover-effect">
-      <a href="#" class="previous" id="yui_3_17_2_1_1422399892329_852"></a>
-      <a href="#" class="next"></a>
+    {.section prevItem}
+      <a href="{fullUrl}" class="previous"></a>
+    {.end}
+    {.section nextItem}
+      <a href="{fullUrl}" class="next"></a>
+    {.end}
     </div>
 </nav>
 {.end}

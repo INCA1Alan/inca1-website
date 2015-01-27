@@ -2139,6 +2139,21 @@ p > a:first-child {
 
 .pagination-large {
     display: none;
+
+    .sqs-gallery-controls {
+        .previous,
+        .next {
+            position: fixed;
+        }
+
+        .previous {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    }
 }
 
 @media screen and (min-width: 1214px) {
