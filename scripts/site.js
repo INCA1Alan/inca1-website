@@ -147,6 +147,14 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
         if (typeof(PAGE_TYPE) != "undefined") {
             if (PAGE_TYPE == "trip") {
                 Y.Cookie.set("lasttrip", window.location.href, { path: "/" });
+
+                if (typeof(DESTINATION) != "undefined") {
+                    var $destinationButton = Y.one('.destination-button');
+                    if ($destinationButton) {
+                        $destinationButton.set('href', DESTINATION);
+                        $html.addClass('has-trip-button');
+                    }
+                }
             } else if (PAGE_TYPE == "extra" && Y.Cookie.get("lasttrip")) {
                 $html.addClass('has-back-button');
             } else {
@@ -157,7 +165,7 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
         }
 
         var clearTripCookie = function() {
-            Y.Cookie.remove("lasttrip");
+            Y.Cookie.set("lasttrip", null, { path: "/" });
         };
 
         var $backButton = Y.one('.back-button');
