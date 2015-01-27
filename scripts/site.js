@@ -148,7 +148,7 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
 
         var clearTripCookie = function() {
             console.log('clearTripCookie');
-            Y.Cookie.remove("lasttrip");
+            Y.Cookie.remove("lasttrip", { path: "/" });
         };
 
         if (typeof(PAGE_TYPE) != "undefined") {
