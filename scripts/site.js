@@ -157,11 +157,18 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
                     if ($destinationButton) {
                         $destinationButton.set('href', DESTINATION_URL);
                         $destinationButton.set('text', 'More '+DESTINATION_NAME+' trips');
+
                         $html.addClass('has-destination-button');
+                        setTimeout(function() {
+                            $html.addClass('show-destination-button');
+                        }, 1);
                     }
                 }
             } else if (PAGE_TYPE == "extra" && Y.Cookie.get("lasttrip")) {
                 $html.addClass('has-back-button');
+                setTimeout(function() {
+                    $html.addClass('show-back-button');
+                }, 1);
             } else {
                 clearTripCookie();
             }
