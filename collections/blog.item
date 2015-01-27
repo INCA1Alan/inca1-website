@@ -64,17 +64,17 @@
     <!--NEWER PAGE-->
 
     {.section prevItem}
-        <a class="pagination__link pagination__link--newer" href="{fullUrl}">Newer</a>
+        <a class="pagination__link pagination__link--newer" href="{fullUrl}"><span>Newer</span></a>
     {.or}
-        <a class="pagination__link pagination__link--newer disabled">Newer</a>
+        <a class="pagination__link pagination__link--newer disabled"><span>Newer</span></a>
     {.end}
 
     <!--OLDER PAGE-->
 
     {.section nextItem}
-        <a class="pagination__link pagination__link--older" href="{fullUrl}">Older</a>
+        <a class="pagination__link pagination__link--older" href="{fullUrl}"><span>Older</span></a>
     {.or}
-        <a class="pagination__link pagination__link--older disabled">Older</a>
+        <a class="pagination__link pagination__link--older disabled"><span>Older</span></a>
     {.end}
 
 </nav>
