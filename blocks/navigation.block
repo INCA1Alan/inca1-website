@@ -3,7 +3,7 @@
 <nav class="site-menu" data-content-field="navigation-mainNav">
     <div class="site-menu__content">
 
-        <button class="site-menu__close" type="button">x</button>
+        <button class="site-menu__close" type="button">Close</button>
 
         <ul class="site-nav">
             {.repeated section items}

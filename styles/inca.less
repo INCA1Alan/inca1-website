@@ -1330,14 +1330,19 @@ p > a:first-child {
 .site-menu__close {
     border: none;
     background: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 0;
     color: white;
 
     position: absolute;
     top: -65px;
     left: 0;
     z-index: 1;
+
+    &:before {
+        content: '1';
+        font-family: 'Inca';
+        font-size: 42px;
+    }
 }
 
 .site-menu__open {
