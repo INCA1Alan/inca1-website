@@ -860,7 +860,7 @@ p > a:first-child {
     transition: opacity 0.1s ease-out;
 }
 
-.subnav__item:hover,
+.no-touch .subnav__item:hover,
 .subnav__item--active {
     opacity: 0.5;
     transition: opacity 0.1s ease-in;
@@ -1287,7 +1287,9 @@ p > a:first-child {
     text-decoration: none;
 
     &:hover {
-        text-decoration: underline;
+        .no-touch & {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -2085,7 +2087,9 @@ p > a:first-child {
         text-decoration: none;
 
         &:hover {
-            text-decoration: underline;
+            .no-touch & {
+                text-decoration: underline;
+            }
         }
     }
 }
