@@ -1,0 +1,12 @@
+{.repeated section items}
+    <div class="testimonial {@|item-classes}">
+        <h1>{title}</h1>
+        <div>
+            {body}
+        </div>
+    </div>
+{.or}
+    <p>No testimonials to display.</p>
+{.end}
+
+
