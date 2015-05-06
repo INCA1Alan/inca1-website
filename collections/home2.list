@@ -51,52 +51,34 @@
         {.end}
     {.end}
 
-{# loop through all items again, avoiding the intro & newsletter this time, so we can just render the usual sections #}
+{# loop through all items again, avoiding the intro so we can just render the rest #}
 
     {.repeated section items}
         {.equal? title "Intro"}
         {.or}
-            {.equal?:title:"Stay in the loop"}
+
+            {.equal? title "gharbl"}
+
+                {# testimonials is a special case that pulls in data from the 'testimonials' collection and renders it uniquely #}
+
+                <squarespace:query collection="testimonials" limit="4">
+                    {.repeated section items}
+
+                        <div>
+                            <h1>testimonial</h1>
+                            <p>{title}</p>
+                            {body}
+                        </div>
+
+                    {.end}
+                </squarespace:query>
+
             {.or}
 
-            <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
-                {body}
-            </section>
+                <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+                    {body}
+                </section>
 
             {.end}
         {.end}
     {.end}
-
-{# loop through all items again, grabbing only the testimonials and giving them special treatment #}
-
-    {.repeated section items}
-        {.equal? title "gharbl"}
-
-    <squarespace:query collection="testimonials" limit="4">
-        {.repeated section items}
-
-            <div>
-                <h1>testimonial</h1>
-                <p>{title}</p>
-                {body}
-            </div>
-
-        {.end}
-    </squarespace:query>
-
-        {.end}
-    {.end}
-
-
-{# loop through all items again, grabbing only the newsletter so we can render it last in the page #}
-
-    {.repeated section items}
-        {.equal?:title:"Stay in the loop"}
-
-            <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
-                {body}
-            </section>
-
-        {.end}
-    {.end}
-
