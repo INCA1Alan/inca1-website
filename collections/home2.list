@@ -1,59 +1,66 @@
-{.repeated section items}
-    {.equal? title "Intro"}
-        <section class="intro nection nection--{title|slugify} {@|item-classes}">
-    {.end}
-{.end}
-            <header class="header">
-                {.section website}
-                    <a class="header__logo logo logo--large" href="/">
-                        <img src="/assets/inca.svg" alt="{siteTitle}">
-                    </a>
-                    <a class="header__logo logo logo--small" href="/">
-                        <img src="/assets/inca-sm.svg" alt="{siteTitle}">
-                    </a>
-                    <div class="header__content">
-                        {.section siteTagLine}
-                            <p>{@}</p>
-                        {.end}
-                        <nav class="header-nav">
-                            <ul>
-                                <li class="header-nav__item header-nav__item--login">
-                                    <a href="https://inca-clients.squarespace.com">Guest Login</a>
-                                </li>
-                                <li class="header-nav__item">
-                                    <button type="button" class="site-menu__open">Menu</button>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                {.end}
-            </header>
+{# loop through all items, grabbing only the intro slide and rendering the opening tags for the <section> #}
 
-{.repeated section items}
-    {.equal? title "Intro"}
-            <video autoplay loop poster="/assets/video.jpg" class="intro__video intro__video--dynamic" alt="Introductory video">
-                <source src="https://s3-us-west-1.amazonaws.com/inca-video/inca.mp4" type="video/mp4">
-                <source src="https://s3-us-west-1.amazonaws.com/inca-video/inca.webm" type="video/webm">
-            </video>
-            <img src="/assets/video.jpg" class="intro__video intro__video--static">
-            <div class="intro__content">
+    {.repeated section items}
+        {.equal? title "Intro"}
+            <section class="intro nection nection--{title|slugify} {@|item-classes}">
+        {.end}
+    {.end}
+
+{# print the site header inside the intro slide #}
+
+                <header class="header">
+                    {.section website}
+                        <a class="header__logo logo logo--large" href="/">
+                            <img src="/assets/inca.svg" alt="{siteTitle}">
+                        </a>
+                        <a class="header__logo logo logo--small" href="/">
+                            <img src="/assets/inca-sm.svg" alt="{siteTitle}">
+                        </a>
+                        <div class="header__content">
+                            {.section siteTagLine}
+                                <p>{@}</p>
+                            {.end}
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="header-nav__item header-nav__item--login">
+                                        <a href="https://inca-clients.squarespace.com">Guest Login</a>
+                                    </li>
+                                    <li class="header-nav__item">
+                                        <button type="button" class="site-menu__open">Menu</button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    {.end}
+                </header>
+
+{# loop through all items again, grabbing only the intro slide so we can render out the body of the section and close it up #}
+
+    {.repeated section items}
+        {.equal? title "Intro"}
+                <video autoplay loop poster="/assets/video.jpg" class="intro__video intro__video--dynamic" alt="Introductory video">
+                    <source src="https://s3-us-west-1.amazonaws.com/inca-video/inca.mp4" type="video/mp4">
+                    <source src="https://s3-us-west-1.amazonaws.com/inca-video/inca.webm" type="video/webm">
+                </video>
+                <img src="/assets/video.jpg" class="intro__video intro__video--static">
+                <div class="intro__content">
+                    {body}
+                </div>
+                <button class="intro__scroll">Start your discovery</button>
+            </section>
+        {.end}
+    {.end}
+
+{# loop through all items again, avoiding the intro this time, so we can just render the usual sections #}
+
+    {.repeated section items}
+        {.equal? title "Intro"}
+        {.or}
+
+            <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
                 {body}
-            </div>
-            <button class="intro__scroll">Start your discovery</button>
-        </section>
+            </section>
+
+        {.end}
     {.end}
-{.end}
-
-{.repeated section items}
-    {.equal? title "Intro"}
-    {.or}
-
-        <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
-            {body}
-        </section>
-
-    {.end}
-{.or}
-    <p>No nections to display.</p>
-{.end}
 
