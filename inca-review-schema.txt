@@ -1,0 +1,71 @@
+<div itemscope itemtype="http://schema.org/Review">
+    <div itemprop="reviewBody">We have enjoyed our journey, met new friends and been greatly enriched by this experience. We had a very good feeling from our initial contact with you and the other staff members at INCA... Our expectations have been surpassed.</div>
+    <div>
+        <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Thing">
+            <meta itemprop="worstRating" content="0">
+            <meta itemprop="bestRating" content="5">
+            <meta itemprop="ratingValue" content="5">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+        </span>,
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">Fred and Joy S.</span>,
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Hollywood</span>,
+                <span itemprop="addressRegion">FL</span>
+            </span>
+        </span>
+    </div>
+    <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Thing">
+        <a href="http://www.inca1.com/patagonia-the-wild-south/" itemprop="name">Patagonia, The Wild South</a>
+        <meta itemprop="url" content="http://www.inca1.com/patagonia-the-wild-south/">
+    </div>
+</div>
+
+<div itemscope itemtype="http://schema.org/Review">
+    <div itemprop="reviewBody">One word: FABULOUS!!!! It was by far, one of the best trips I've taken! Truly spectacular - I had THE BEST time and I'm so excited about promoting the destination!! I'm working on sorting through my 1800 pictures and will send you a few... I got some amazing shots!</div>
+    <div>
+        <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Thing">
+            <meta itemprop="worstRating" content="0">
+            <meta itemprop="bestRating" content="5">
+            <meta itemprop="ratingValue" content="5">
+            &#9733;&#9733;&#9733;&#9733;&#9733;
+        </span>,
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">Nicole F.</span>,
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Santa Fe</span>,
+                <span itemprop="addressRegion">NM</span>
+            </span>
+        </span>
+    </div>
+    <div itemprop="itemReviewed" itemscope itemtype="http://schema.org/Thing">
+        <a href="http://www.inca1.com/galapagos-origins-of-species/" itemprop="name">Galapagos, Origins of Species</a>
+        <meta itemprop="url" content="http://www.inca1.com/galapagos-origins-of-species/">
+    </div>
+</div>
+
+
+
+
+
+{.repeated section items}
+    <div class="testimonial {@|item-classes}">
+        <h1>{excerpt}</h1>
+        <div>
+            {body}
+        </div>
+    </div>
+{.or}
+    <p>No testimonials to display.</p>
+{.end}
+
+
+
+{.repeated section items}
+<div class="testimonial {@|item-classes}" itemscope itemtype="http://schema.org/Review">
+    <div itemprop="reviewBody">{title}</div>
+    {body}
+</div>
+{.or}
+    <p>No testimonials to display.</p>
+{.end}

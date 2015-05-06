@@ -1,9 +1,7 @@
 {.repeated section items}
-    <div class="testimonial {@|item-classes}">
-        <h1>{title}</h1>
-        <div>
-            {body}
-        </div>
+    <div class="testimonial {@|item-classes}" itemscope itemtype="http://schema.org/Review">
+        <h1>{excerpt}</h1>
+        {body}
     </div>
 {.or}
     <p>No testimonials to display.</p>
