@@ -64,7 +64,7 @@ YUI().use('node', 'event', 'cookie', 'squarespace-util', function (Y) {
         $menuClose.on('click', closeMenu);
         $menuUnderlay.on('click', closeMenu); 
 
-        if ($body.hasClass('homepage') || $body.hasClass('.collection-type-home2')) {
+        if ($body.hasClass('homepage') || $body.hasClass('collection-type-home2')) {
             var $intro = Y.one('.intro');
             var $video = Y.all('.intro__video');
             var $header = Y.one('.header');
