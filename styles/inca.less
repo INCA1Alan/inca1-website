@@ -45,7 +45,8 @@ body {
 
 @media screen and (min-width: 1214px) {
     // TODO: delete me 
-    .homepage {
+    .homepage,
+    .collection-type-home2 {
         min-width: 1214px;
         padding-top: 0;
     }
@@ -88,7 +89,8 @@ h2 {
 
 @media screen and (min-width: 1214px) {
     .header {
-        .homepage & {
+        .homepage &,
+        .collection-type-home2 & {
             position: absolute;
             bottom: 0;
             top: auto;
@@ -332,7 +334,8 @@ h2 {
 }
 
 p > a:first-child {
-    .homepage .section & {
+    .homepage .section &,
+    .collection-type-home2 .section & {
         border-width: 2px;
         border-style: solid;
         padding: 11px 38px;
@@ -1644,7 +1647,8 @@ p > a:first-child {
     max-width: none;
 }
 
-.homepage {
+.homepage,
+.collection-type-home2 {
     background-color: black;
 
     .video-ready & {
@@ -1654,7 +1658,9 @@ p > a:first-child {
 }
 
 .homepage .content,
-.homepage .site-footer {
+.collection-type-home2 .content,
+.homepage .site-footer,
+.collection-type-home2 .site-footer {
     background-color: white;
 
     .video-ready & {
@@ -1663,7 +1669,8 @@ p > a:first-child {
     }
 }
 
-.homepage .body {
+.homepage .body,
+.collection-type-home2 .body {
     opacity: 0;
     transition: opacity 0.3s ease-in;
 
