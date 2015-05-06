@@ -51,11 +51,26 @@
         {.end}
     {.end}
 
-{# loop through all items again, avoiding the intro this time, so we can just render the usual sections #}
+{# loop through all items again, avoiding the intro  & newsletter this time, so we can just render the usual sections #}
 
     {.repeated section items}
         {.equal? title "Intro"}
         {.or}
+            {.equal?:title:"Stay in the loop"}
+            {.or}
+
+            <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
+                {body}
+            </section>
+
+            {.end}
+        {.end}
+    {.end}
+
+{# loop through all items again, grabbing only the newsletter so we can render it last in the page #}
+
+    {.repeated section items}
+        {.equal?:title:"Stay in the loop"}
 
             <section class="nection nection--{title|slugify} {@|item-classes}" style="background-image: url({assetUrl})">
                 {body}
