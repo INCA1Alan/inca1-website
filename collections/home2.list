@@ -82,7 +82,7 @@
                             <div class="meta">
                                 <div class="meta-inside">
                     
-                                    <div class="meta-description">{.excerpt}</div>
+                                    <div class="meta-description">{excerpt}</div>
                                     {body}
 
                                 </div>
