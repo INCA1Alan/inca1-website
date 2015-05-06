@@ -61,17 +61,55 @@
 
                 {# testimonials is a special case that pulls in data from the 'testimonials' collection and renders it uniquely #}
 
+                <section class="nection nection--{title|slugify} {@|item-classes}">
+                    <div class="sqs-layout sqs-grid-12 columns-12">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12">
+                                <div class="sqs-block gallery-block sqs-block-gallery" data-block-json="{&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:null,&quot;design&quot;:&quot;slideshow&quot;,&quot;aspectRatio&quot;:null,&quot;autoplay&quot;:true,&quot;autoplay-duration&quot;:5,&quot;controls&quot;:true,&quot;auto-crop&quot;:true,&quot;thumbnails&quot;:false,&quot;show-meta&quot;:true,&quot;meta-position&quot;:&quot;bottom&quot;,&quot;show-meta-on-hover&quot;:false,&quot;active-alignment&quot;:&quot;center&quot;,&quot;collectionId&quot;:&quot;5480a182e4b0e9f25c8604d7&quot;,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;5480a182e4b0e9f25c8604d7&quot;}" data-block-type="8">
+                                    <div class="sqs-block-content">
+                                        <div class="sqs-gallery-container sqs-gallery-block-slideshow sqs-gallery-has-controls sqs-gallery-block-show-meta sqs-gallery-block-meta-position-bottom clear">
+                                        <div class="sqs-gallery">
+        
                 <squarespace:query collection="testimonials" limit="4">
                     {.repeated section items}
 
-                        <div>
-                            <h1>testimonial</h1>
-                            <p>{title}</p>
-                            {body}
+                        <div class="slide content-fill" data-type="image" data-click-through-url="">
+              
+                        {.main-image?}
+                            <img class="thumb-image" {@|image-meta}>
+                        {.end}
+              
+                            <div class="meta">
+                                <div class="meta-inside">
+                    
+                                    <div class="meta-description">{.excerpt}</div>
+                                    {body}
+
+                                </div>
+                            </div>
+              
+                            <div class="color-overlay"></div>
                         </div>
 
                     {.end}
                 </squarespace:query>
+                
+                                        </div>
+                                        <div class="sqs-gallery-meta-container">
+    
+                                            <div class="sqs-gallery-controls">
+                                                <a href="#" class="previous"></a>
+                                                <a href="#" class="next"></a>
+                                            </div>
+      
+                                        </div> <!-- END .sqs-gallery-meta-container -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
             {.or}
 
