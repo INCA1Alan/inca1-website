@@ -1964,6 +1964,8 @@ p > a:first-child {
 
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+
+    color: white;
 }
 
 /* this next part is the absolute worst, but we have to work around sqs's black box slider layout algo */
@@ -2035,11 +2037,16 @@ p > a:first-child {
     margin-bottom: 0;
 }
 
-.tag-testimonials .sqs-gallery-block-slideshow .meta .meta-description p em {
+.testimonials-meta {
+    margin-top: 18px;
+    margin-bottom: 0;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0;
+}
+
+.tag-testimonials .sqs-gallery-block-slideshow .meta .meta-description p em {
 
     &:before {
         content: '—';
