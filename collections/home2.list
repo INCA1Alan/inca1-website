@@ -57,7 +57,7 @@
         {.equal? title "Intro"}
         {.or}
 
-            {.equal? title "gharbl"}
+            {.equal? title "Testimonials"}
 
                 {# testimonials is a special case that pulls in data from the 'testimonials' collection and renders it uniquely #}
 
