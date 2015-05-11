@@ -19,7 +19,14 @@
         </div>
     {.end}
 {.or}
-    <squarespace:block-field id="whatsNewTags" columns="12" />
+    <div class="whats-new__tags">
+        <squarespace:block-field id="whatsNewTags" columns="12" />
+        <div class="sqs-block horizontalrule-block sqs-block-horizontalrule">
+            <div class="sqs-block-content">
+                <hr>
+            </div>
+        </div>
+    </div>
 {.end}
 
 <!-- AUTHOR FILTER RESULTS ex: http://www.base-template.com/blog?author=4f046df4d09ae2cf23d1aaa2 -->
