@@ -6,9 +6,8 @@
         <section class="site-footer__meta">
             <squarespace:block-field id="metaBlocks" columns="12" />
         </section>
-        <squarespace:block-field id="footerSeparator" columns="12" />
         <section class="site-footer__links">
-            <squarespace:block-field id="footerLinks" columns="9" />
+            <squarespace:block-field id="footerLinks" columns="12" />
         </section>
       </footer>
 
