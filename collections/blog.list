@@ -7,15 +7,19 @@
 
 <!-- TAG FILTER RESULTS ex: http://base-template.squarespace.com/blog/?tag=tag2 -->
 
-{.section tagFilter}
-  <div class="p">
-    Filtering by Tag:
-    <ul class="tag-list tag-list--inline">
-        <li class="tag-list__tag">
-            <a>{@|safe}</a>
-        </li>
-    </ul>
-  </div>
+{.if tagFilter}
+    {.section tagFilter}
+        <div class="p">
+            Filtering by Tag:
+            <ul class="tag-list tag-list--inline">
+                <li class="tag-list__tag">
+                    <a>{@|safe}</a>
+                </li>
+            </ul>
+        </div>
+    {.end}
+{.else}
+    <squarespace:block-field id="whatsNewTags" columns="12" />
 {.end}
 
 <!-- AUTHOR FILTER RESULTS ex: http://www.base-template.com/blog?author=4f046df4d09ae2cf23d1aaa2 -->
