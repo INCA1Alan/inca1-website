@@ -8,7 +8,14 @@
 <!-- TAG FILTER RESULTS ex: http://base-template.squarespace.com/blog/?tag=tag2 -->
 
 {.section tagFilter}
-  <p>Filtering by Tag: {@|safe}</p>
+  <div class="p">
+    Filtering by Tag:
+    <ul class="tag-list tag-list--inline">
+        <li class="tag-list__tag">
+            <a>{@|safe}</a>
+        </li>
+    </ul>
+  </div>
 {.end}
 
 <!-- AUTHOR FILTER RESULTS ex: http://www.base-template.com/blog?author=4f046df4d09ae2cf23d1aaa2 -->
@@ -60,7 +67,7 @@
 
                                 <h3 class="blog-index__meta">
                                     <time datetime="{addedOn|date %F}">{addedOn|date %B %e, %Y}</time>
-                                    {.categories?}
+                                    {.if categories}
                                         in
                                         {.repeated section categories}
                                             <a href="?category={@|url-encode}">{@}</a>{.alternates with},
