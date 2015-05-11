@@ -18,7 +18,7 @@
             </ul>
         </div>
     {.end}
-{.else}
+{.or}
     <squarespace:block-field id="whatsNewTags" columns="12" />
 {.end}
 
