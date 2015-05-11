@@ -63,7 +63,7 @@
 
 {.repeated section items}
 <div class="testimonial {@|item-classes}" itemscope itemtype="http://schema.org/Review">
-    <div itemprop="reviewBody">{title}</div>
+    <div itemprop="reviewBody">{excerpt}</div>
     {body}
 </div>
 {.or}
