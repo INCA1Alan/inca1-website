@@ -10,7 +10,7 @@
             <squarespace:block-field id="footerSeparator" columns="12" />
         </section>
         <section class="site-footer__links">
-            <squarespace:block-field id="footerLinks" columns="9" />
+            <squarespace:block-field id="footerLinks" columns="12" />
         </section>
       </footer>
 
