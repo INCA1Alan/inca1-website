@@ -80,9 +80,9 @@
                         {.end}
               
                             <div class="meta">
-                                <div class="meta-inside">
+                                <div class="meta-inside" itemscope itemtype="http://schema.org/Review">
                     
-                                    <div class="meta-description">{excerpt}</div>
+                                    <div class="meta-description" itemprop="reviewBody">{excerpt}</div>
                                     <div class="testimonial-meta">
                                         {body}
                                     </div>

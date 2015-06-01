@@ -1,6 +1,6 @@
 {.repeated section items}
     <div class="testimonial {@|item-classes}" itemscope itemtype="http://schema.org/Review">
-        <h1>{excerpt}</h1>
+        <h1 itemprop="reviewBody">{excerpt}</h1>
         {body}
     </div>
 {.or}
