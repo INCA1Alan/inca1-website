@@ -1,3 +1,10 @@
+window.onerror = function() {
+    var $html = document.getElementsByTagName('html')[0];
+    if ($html && $html.classList) {
+        $html.classList.add('video-ready');
+    }
+};
+
 /*
     Create a new YUI instance and load the node
     and event modules.
