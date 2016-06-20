@@ -11,7 +11,7 @@
                 <header class="header">
                     {.section website}
                         <a class="header__logo logo logo--large" href="/">
-                            <img src="/assets/inca.svg" alt="{siteTitle}">
+                            <img src="/assets/inca-40.svg" alt="{siteTitle}">
                         </a>
                         <a class="header__logo logo logo--small" href="/">
                             <img src="/assets/inca-sm.svg" alt="{siteTitle}">
