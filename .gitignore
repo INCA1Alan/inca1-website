@@ -4,3 +4,4 @@ sftp-config.json
 *.swo
 *~
 collections/destination-link.list
+node_modules/*
